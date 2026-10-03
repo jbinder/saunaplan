@@ -1,0 +1,293 @@
+.saunaplan-admin {
+	--sp-muted: #646970;
+	--sp-warn: #b32d2e;
+}
+
+.saunaplan-page-link {
+	margin: 12px 0 16px;
+	padding: 10px 12px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-left: 4px solid #2271b1;
+}
+
+.saunaplan-page-link code {
+	background: none;
+}
+
+.saunaplan-tag {
+	display: inline-block;
+	margin-left: 6px;
+	padding: 1px 8px;
+	border-radius: 999px;
+	background: #f0f0f1;
+	color: var(--sp-muted);
+	font-size: 12px;
+}
+
+.saunaplan-warning {
+	color: var(--sp-warn);
+}
+
+.saunaplan-intro {
+	max-width: 760px;
+	font-size: 14px;
+}
+
+.saunaplan-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px 24px;
+	align-items: center;
+	justify-content: space-between;
+	margin: 16px 0;
+}
+
+.saunaplan-nav,
+.saunaplan-filter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	align-items: center;
+}
+
+.saunaplan-period {
+	margin-left: 8px;
+	font-size: 14px;
+}
+
+.saunaplan-day {
+	margin: 24px 0 8px;
+}
+
+.saunaplan-schedule td {
+	vertical-align: top;
+}
+
+.saunaplan-schedule .column-time {
+	width: 110px;
+	white-space: nowrap;
+}
+
+.saunaplan-schedule .column-actions {
+	width: 150px;
+}
+
+.saunaplan-schedule tr.is-booked > td:first-child {
+	box-shadow: inset 4px 0 0 #b4521f;
+}
+
+.saunaplan-schedule tr.mode-_blocked > td:first-child {
+	box-shadow: inset 4px 0 0 #8c8f94;
+}
+
+.saunaplan-list {
+	margin: 0;
+}
+
+.saunaplan-badge {
+	display: inline-block;
+	margin: 2px 4px 0 0;
+	padding: 0 6px;
+	border-radius: 4px;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	font-size: 12px;
+}
+
+.saunaplan-columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 16px;
+	margin: 16px 0 24px;
+}
+
+.saunaplan-box {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	padding: 4px 16px 8px;
+}
+
+.saunaplan-actions form {
+	display: inline-block;
+	margin: 0 4px 4px 0;
+}
+
+tr.is-inactive td {
+	color: var(--sp-muted);
+}
+
+tr.has-issues > td:first-child {
+	box-shadow: inset 4px 0 0 var(--sp-warn);
+}
+
+.saunaplan-weekday {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.saunaplan-radio {
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+.saunaplan-hours th {
+	padding: 4px 12px 4px 0;
+	width: auto;
+	font-weight: 400;
+}
+
+.saunaplan-hours td {
+	padding: 4px 0;
+}
+
+.saunaplan-placeholders {
+	columns: 2 320px;
+}
+
+.saunaplan-template {
+	max-width: 900px;
+	margin: 0 0 8px;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+}
+
+.saunaplan-template summary {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.saunaplan-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin: 16px 0;
+}
+
+.saunaplan-stat {
+	display: flex;
+	flex-direction: column;
+	min-width: 140px;
+	padding: 12px 16px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+}
+
+.saunaplan-stat.is-issue {
+	border-left: 4px solid var(--sp-warn);
+}
+
+.saunaplan-stat-value {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.saunaplan-stat-label {
+	color: var(--sp-muted);
+}
+
+/* ------------------------------------------------------- code letters */
+
+.saunaplan-letter {
+	max-width: 680px;
+	margin: 24px 0;
+	padding: 32px 40px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #1d2327;
+}
+
+.saunaplan-letter h2 {
+	font-size: 22px;
+	margin: 16px 0 8px;
+}
+
+.saunaplan-letter-site {
+	margin: 0;
+	color: var(--sp-muted);
+}
+
+.saunaplan-letter-to {
+	margin: 0;
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.saunaplan-letter-code {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	margin: 20px 0;
+	padding: 16px;
+	border: 2px dashed #8c8f94;
+	border-radius: 8px;
+}
+
+.saunaplan-qr {
+	flex: none;
+	width: 140px;
+	height: 140px;
+}
+
+.saunaplan-qr svg {
+	width: 100%;
+	height: 100%;
+}
+
+.saunaplan-letter-url {
+	font-family: monospace;
+	word-break: break-all;
+}
+
+.saunaplan-letter-codeline {
+	margin: 4px 0 0;
+	font-family: monospace;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+
+.saunaplan-letter-small {
+	font-size: 12px;
+	color: var(--sp-muted);
+}
+
+@media print {
+	#adminmenumain,
+	#wpadminbar,
+	#wpfooter,
+	.notice,
+	.saunaplan-noprint {
+		display: none !important;
+	}
+
+	#wpcontent,
+	#wpbody-content {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	html.wp-toolbar {
+		padding-top: 0 !important;
+	}
+
+	.saunaplan-letter {
+		max-width: none;
+		margin: 0;
+		border: none;
+		page-break-after: always;
+		break-after: page;
+	}
+}
+
+.saunaplan-schedule {
+	table-layout: fixed;
+}
+
+.saunaplan-schedule th:nth-child(2) {
+	width: 32%;
+}

@@ -1,0 +1,1326 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Saunaplan 0.1.0\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: saunaplan\n"
+
+msgid "Saunaplan"
+msgstr "Saunaplan"
+
+msgid "Book the building's sauna: private or open sessions, waiting list, Aufguss, reminders with cooldown instructions, quick ratings and fair-use rules."
+msgstr "Sauna im Haus buchen: private oder offene Termine, Warteliste, Aufguss, Erinnerungen mit Hinweisen zum Abkühlen, schnelle Bewertungen und faire Regeln."
+
+msgid "Schedule"
+msgstr "Belegung"
+
+msgid "Flats"
+msgstr "Wohnungen"
+
+msgid "Recurring sessions"
+msgstr "Wiederkehrende Termine"
+
+msgid "Ratings"
+msgstr "Bewertungen"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Code letters"
+msgstr "Code-Briefe"
+
+msgid "%1$d new flats added (%2$d in the list, existing ones were kept)."
+msgstr "%1$d neue Wohnungen hinzugefügt (%2$d in der Liste, bestehende wurden behalten)."
+
+msgid "These lines could not be read: %s."
+msgstr "Diese Zeilen konnten nicht gelesen werden: %s."
+
+msgid "Flat %1$s: %2$d devices signed out."
+msgstr "Wohnung %1$s: %2$d Geräte abgemeldet."
+
+msgid "Flat %s deactivated – it can no longer sign in or book."
+msgstr "Wohnung %s deaktiviert – sie kann sich nicht mehr anmelden oder buchen."
+
+msgid "Flat %s activated."
+msgstr "Wohnung %s aktiviert."
+
+msgid "Flat %s deleted."
+msgstr "Wohnung %s gelöscht."
+
+msgid "All active flats already have a code."
+msgstr "Alle aktiven Wohnungen haben schon einen Code."
+
+msgid "Please choose a kind of session."
+msgstr "Bitte wähle eine Art von Termin."
+
+msgid "Please select at least one weekday."
+msgstr "Bitte wähle mindestens einen Wochentag."
+
+msgid "Please enter a valid start date."
+msgstr "Bitte gib ein gültiges Startdatum ein."
+
+msgid "The end date must be a valid date after the start date."
+msgstr "Das Enddatum muss ein gültiges Datum nach dem Startdatum sein."
+
+msgid "Please enter a start time."
+msgstr "Bitte gib eine Startzeit ein."
+
+msgid "Recurring session saved."
+msgstr "Wiederkehrender Termin gespeichert."
+
+msgid "Already booked by residents (these bookings stay, the recurring session is not shown there): %s"
+msgstr "Bereits von Bewohner*innen gebucht (diese Buchungen bleiben, der wiederkehrende Termin wird dort nicht angezeigt): %s"
+
+msgid "Recurring session deleted."
+msgstr "Wiederkehrender Termin gelöscht."
+
+msgid "Booking cancelled. People who joined and the waiting list were notified."
+msgstr "Buchung storniert. Mitmachende und die Warteliste wurden benachrichtigt."
+
+msgid "Booking not found."
+msgstr "Buchung nicht gefunden."
+
+msgid "This date of the recurring session was cancelled."
+msgstr "Dieser Termin des wiederkehrenden Termins wurde abgesagt."
+
+msgid "Weekly on %1$s"
+msgstr "Wöchentlich am %1$s"
+
+msgid "Every %2$d weeks on %1$s"
+msgstr "Alle %2$d Wochen am %1$s"
+
+msgid "from %s"
+msgstr "ab %s"
+
+msgid "until %s"
+msgstr "bis %s"
+
+msgid "Booking page: <strong>no page selected.</strong> Create a page with %1$s and choose it in the <a href=\"%2$s\">settings</a>."
+msgstr "Buchungsseite: <strong>keine Seite gewählt.</strong> Lege eine Seite mit %1$s an und wähle sie in den <a href=\"%2$s\">Einstellungen</a>."
+
+msgid "Booking page:"
+msgstr "Buchungsseite:"
+
+msgid "Copied!"
+msgstr "Kopiert!"
+
+msgid "Copy link"
+msgstr "Link kopieren"
+
+msgid "Unlisted – only reachable via this link"
+msgstr "Versteckt – nur über diesen Link erreichbar"
+
+msgid "The page is not published yet, so residents cannot open it."
+msgstr "Die Seite ist noch nicht veröffentlicht, Bewohner*innen können sie also nicht öffnen."
+
+msgid "The [saunaplan] shortcode was not found on this page. Add it there, e.g. with a Shortcode block."
+msgstr "Der Shortcode [saunaplan] wurde auf dieser Seite nicht gefunden. Füge ihn dort ein, z. B. mit einem Shortcode-Block."
+
+msgid "%s booking page"
+msgstr "Buchungsseite %s"
+
+msgid "unlisted"
+msgstr "versteckt"
+
+msgid "You are not allowed to do this."
+msgstr "Das darfst du nicht."
+
+msgid "These letters are no longer available. For security reasons, codes can only be printed within one hour after creating them. Please create new codes on the Flats screen."
+msgstr "Diese Briefe sind nicht mehr verfügbar. Aus Sicherheitsgründen können Codes nur innerhalb einer Stunde nach dem Erstellen gedruckt werden. Bitte erstelle neue Codes unter „Wohnungen“."
+
+msgid "Back to the flats"
+msgstr "Zurück zu den Wohnungen"
+
+msgid "%d letter is ready. Print it now and put it into the mailbox – the code can not be shown again later."
+msgid_plural "%d letters are ready. Print them now and put them into the mailboxes – the codes can not be shown again later."
+msgstr[0] "%d Brief ist fertig. Drucke ihn jetzt aus und wirf ihn in den Briefkasten – der Code kann später nicht mehr angezeigt werden."
+msgstr[1] "%d Briefe sind fertig. Drucke sie jetzt aus und wirf sie in die Briefkästen – die Codes können später nicht mehr angezeigt werden."
+
+msgid "Print letters"
+msgstr "Briefe drucken"
+
+msgid "Your access to the %s booking"
+msgstr "Dein Zugang zur %s-Buchung"
+
+msgid "With this code, everyone in your flat can book online. Please keep this letter safe and do not share the code outside your flat."
+msgstr "Mit diesem Code kann jede Person in deiner Wohnung online buchen. Bitte bewahre den Brief gut auf und gib den Code nicht außerhalb deiner Wohnung weiter."
+
+msgid "Scan the QR code with your phone camera – or open this address and enter the code:"
+msgstr "Scanne den QR-Code mit der Handykamera – oder öffne diese Adresse und gib den Code ein:"
+
+msgid "Sign in once with the code – your phone or computer stays signed in."
+msgstr "Einmal mit dem Code anmelden – dein Handy oder Computer bleibt angemeldet."
+
+msgid "Tap a free time to book. Choose \"private\" or open the session for neighbours."
+msgstr "Tippe auf eine freie Zeit, um zu buchen. Wähle „privat“ oder öffne den Termin für Nachbar*innen."
+
+msgid "Optional: add your email address to get reminders."
+msgstr "Optional: Gib deine E-Mail-Adresse an, um Erinnerungen zu bekommen."
+
+msgid "Privacy: bookings are anonymous. Other residents only see the kind of session and the number of people, never which flat booked."
+msgstr "Datenschutz: Buchungen sind anonym. Andere sehen nur die Art des Termins und die Anzahl der Personen, nie welche Wohnung gebucht hat."
+
+msgid "Period"
+msgstr "Zeitraum"
+
+msgid "last %d days"
+msgstr "letzte %d Tage"
+
+msgid "No ratings in this period yet."
+msgstr "Noch keine Bewertungen in diesem Zeitraum."
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Flat"
+msgstr "Wohnung"
+
+msgid "Issues"
+msgstr "Probleme"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "anonymized"
+msgstr "anonymisiert"
+
+msgid "Everything was fine"
+msgstr "Alles war gut"
+
+msgid "After %d days the link to the flat is removed (see Settings → Privacy); the answers stay for statistics."
+msgstr "Nach %d Tagen wird die Verbindung zur Wohnung entfernt (siehe Einstellungen → Datenschutz); die Antworten bleiben für die Statistik."
+
+msgid "Earlier"
+msgstr "Früher"
+
+msgid "Today"
+msgstr "Heute"
+
+msgid "Later"
+msgstr "Später"
+
+msgid "From"
+msgstr "Ab"
+
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d Tag"
+msgstr[1] "%d Tage"
+
+msgid "Show"
+msgstr "Anzeigen"
+
+msgid "No opening hours in this period."
+msgstr "Keine Öffnungszeiten in diesem Zeitraum."
+
+msgid "Time"
+msgstr "Zeit"
+
+msgid "Booking"
+msgstr "Buchung"
+
+msgid "People (flat)"
+msgstr "Personen (Wohnung)"
+
+msgid "Waiting list"
+msgstr "Warteliste"
+
+msgid "Actions"
+msgstr "Aktionen"
+
+msgid "Recurring session"
+msgstr "Wiederkehrender Termin"
+
+msgid "Booked by %s"
+msgstr "Gebucht von %s"
+
+msgid "Free"
+msgstr "Frei"
+
+msgid "Cancel this booking? People who joined and the waiting list will be notified."
+msgstr "Diese Buchung stornieren? Mitmachende und die Warteliste werden benachrichtigt."
+
+msgid "Cancel"
+msgstr "Stornieren"
+
+msgid "Cancel the recurring session on this date? The slot becomes free for bookings."
+msgstr "Den wiederkehrenden Termin an diesem Tag absagen? Die Zeit wird für Buchungen frei."
+
+msgid "Skip this date"
+msgstr "Diesen Tag absagen"
+
+msgid "%d free slot"
+msgid_plural "%d free slots"
+msgstr[0] "%d freie Zeit"
+msgstr[1] "%d freie Zeiten"
+
+msgid "Add recurring session"
+msgstr "Wiederkehrenden Termin hinzufügen"
+
+msgid "Predefined bookings that repeat every week, e.g. an open session for women on Tuesday evenings, or \"not available\" for the weekly cleaning. They do not count toward any flat's limit. Open sessions can be joined by residents."
+msgstr "Vordefinierte Buchungen, die sich jede Woche wiederholen, z. B. ein offener Frauentermin am Dienstagabend oder „nicht verfügbar“ für die wöchentliche Reinigung. Sie zählen nicht zum Limit einer Wohnung. Offenen Terminen können Bewohner*innen beitreten."
+
+msgid "Title (optional)"
+msgstr "Titel (optional)"
+
+msgid "Shown to residents, e.g. \"Ladies' evening\" or \"Cleaning\"."
+msgstr "Wird Bewohner*innen angezeigt, z. B. „Damenabend“ oder „Reinigung“."
+
+msgid "Kind of session"
+msgstr "Art des Termins"
+
+msgid "Options"
+msgstr "Optionen"
+
+msgid "Options that do not fit the chosen kind of session are ignored."
+msgstr "Optionen, die nicht zur gewählten Art passen, werden ignoriert."
+
+msgid "Weekdays"
+msgstr "Wochentage"
+
+msgid "Every"
+msgstr "Alle"
+
+msgid "week(s)"
+msgstr "Woche(n)"
+
+msgid "for"
+msgstr "für"
+
+msgid "slot(s) of %d minutes"
+msgstr "Zeit(en) à %d Minuten"
+
+msgid "from"
+msgstr "ab"
+
+msgid "until (optional)"
+msgstr "bis (optional)"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Show this recurring session"
+msgstr "Diesen wiederkehrenden Termin anzeigen"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "No recurring sessions yet."
+msgstr "Noch keine wiederkehrenden Termine."
+
+msgid "Session"
+msgstr "Termin"
+
+msgid "When"
+msgstr "Wann"
+
+msgid "inactive"
+msgstr "inaktiv"
+
+msgid "Edit"
+msgstr "Bearbeiten"
+
+msgid "Delete this recurring session? Upcoming dates are removed; people who joined them are not notified automatically."
+msgstr "Diesen wiederkehrenden Termin löschen? Kommende Termine werden entfernt; Mitmachende werden nicht automatisch benachrichtigt."
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "General"
+msgstr "Allgemein"
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Same as WordPress (currently %s)"
+msgstr "Wie WordPress (derzeit %s)"
+
+msgid "Language of the booking page, the emails and these admin screens. Email texts you have not changed switch along."
+msgstr "Sprache der Buchungsseite, der E-Mails und dieser Verwaltungsseiten. Nicht geänderte E-Mail-Texte wechseln mit."
+
+msgid "Booking page"
+msgstr "Buchungsseite"
+
+msgid "— Select —"
+msgstr "— Auswählen —"
+
+msgid "The page that contains the shortcode %s. Its address can be hard to guess, e.g. /sauna-k7q2/."
+msgstr "Die Seite mit dem Shortcode %s. Ihre Adresse darf schwer zu erraten sein, z. B. /sauna-k7q2/."
+
+msgid "Keep the booking page unlisted (not in menus, site search, sitemap; noindex for search engines)"
+msgstr "Buchungsseite verstecken (nicht in Menüs, Suche, Sitemap; noindex für Suchmaschinen)"
+
+msgid "Email sender"
+msgstr "E-Mail-Absender"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Sender address"
+msgstr "Absenderadresse"
+
+msgid "Leave empty to use the WordPress defaults."
+msgstr "Leer lassen für die WordPress-Standards."
+
+msgid "Feedback recipients"
+msgstr "Empfänger*innen für Rückmeldungen"
+
+msgid "Email addresses that receive ratings with problems or comments (one per line)."
+msgstr "E-Mail-Adressen, die Bewertungen mit Problemen oder Kommentaren erhalten (eine pro Zeile)."
+
+msgid "Opening hours and slots"
+msgstr "Öffnungszeiten und Zeitfenster"
+
+msgid "Slot length"
+msgstr "Länge eines Zeitfensters"
+
+msgid "%d minutes"
+msgstr "%d Minuten"
+
+msgid "Existing bookings keep their length when you change this."
+msgstr "Bestehende Buchungen behalten ihre Länge, wenn du das änderst."
+
+msgid "Bookable hours"
+msgstr "Buchbare Zeiten"
+
+msgid "until"
+msgstr "bis"
+
+msgid "E.g. 08:00 – 23:00 gives hourly slots from 8:00 to 23:00 (last slot 22:00–23:00). Use 24:00 for midnight. Leave a day empty to close it."
+msgstr "Z. B. 08:00 – 23:00 ergibt stündliche Zeiten von 8 bis 23 Uhr (letzte Zeit 22:00–23:00). 24:00 steht für Mitternacht. Lass einen Tag leer, um ihn zu schließen."
+
+msgid "Closed dates"
+msgstr "Geschlossene Tage"
+
+msgid "One date per line (YYYY-MM-DD), e.g. for maintenance. For regular blocks use a recurring session \"Not available\"."
+msgstr "Ein Datum pro Zeile (JJJJ-MM-TT), z. B. für Wartung. Für regelmäßige Sperren einen wiederkehrenden Termin „Nicht verfügbar“ verwenden."
+
+msgid "Fair-use rules"
+msgstr "Faire Regeln"
+
+msgid "Maximum people at once"
+msgstr "Höchstens gleichzeitig"
+
+msgid "Book ahead"
+msgstr "Im Voraus buchbar"
+
+msgid "days"
+msgstr "Tage"
+
+msgid "Monthly limit per flat"
+msgstr "Monatslimit pro Wohnung"
+
+msgid "Counts these bookings: %s. Joining or opening a session for others does not count. 0 = no limit."
+msgstr "Zählt diese Buchungen: %s. Mitmachen oder einen Termin für andere öffnen zählt nicht. 0 = kein Limit."
+
+msgid "Slots in a row"
+msgstr "Zeiten hintereinander"
+
+msgid "How many directly adjacent slots one flat may book or join. 0 = no limit."
+msgstr "Wie viele direkt aufeinanderfolgende Zeiten eine Wohnung buchen oder mitmachen darf. 0 = kein Limit."
+
+msgid "Rating"
+msgstr "Bewertung"
+
+msgid "Ask for a rating of the last session before the next booking (one tap \"everything was fine\" is enough)"
+msgstr "Vor der nächsten Buchung nach einer Bewertung des letzten Termins fragen (ein Tipp auf „Alles war gut“ reicht)"
+
+msgid "Reminders and instructions"
+msgstr "Erinnerungen und Hinweise"
+
+msgid "Reminder"
+msgstr "Erinnerung"
+
+msgid "hours before the session (0 = no reminder)"
+msgstr "Stunden vor dem Termin (0 = keine Erinnerung)"
+
+msgid "Privacy"
+msgstr "Datenschutz"
+
+msgid "Delete old bookings after"
+msgstr "Alte Buchungen löschen nach"
+
+msgid "Bookings and waiting lists are deleted after this time; ratings are kept without the flat."
+msgstr "Buchungen und Wartelisten werden danach gelöscht; Bewertungen bleiben ohne Wohnung erhalten."
+
+msgid "Stay signed in for"
+msgstr "Angemeldet bleiben für"
+
+msgid "days (extended with every visit)"
+msgstr "Tage (verlängert sich mit jedem Besuch)"
+
+msgid "Uninstall"
+msgstr "Deinstallieren"
+
+msgid "Delete all data when the plugin is deleted"
+msgstr "Alle Daten löschen, wenn das Plugin gelöscht wird"
+
+msgid "Email texts"
+msgstr "E-Mail-Texte"
+
+msgid "Placeholders:"
+msgstr "Platzhalter:"
+
+msgid "Subject"
+msgstr "Betreff"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Background jobs (reminders, rating requests, cleanup) run every 15 minutes. Next run: %s."
+msgstr "Hintergrundaufgaben (Erinnerungen, Bewertungsanfragen, Aufräumen) laufen alle 15 Minuten. Nächster Lauf: %s."
+
+msgid "Background jobs are not scheduled – deactivate and activate the plugin."
+msgstr "Hintergrundaufgaben sind nicht geplant – deaktiviere das Plugin und aktiviere es wieder."
+
+msgid "Every flat gets a personal code on a printed letter for its mailbox. Whoever has the letter can sign in – so only people living here get access, without email addresses or passwords. Codes are stored encrypted (hashed): they can only be printed right after creating them. If a letter is lost, simply create a new code."
+msgstr "Jede Wohnung bekommt einen persönlichen Code auf einem gedruckten Brief für den Briefkasten. Wer den Brief hat, kann sich anmelden – so bekommen nur Leute Zugang, die hier wohnen, ohne E-Mail-Adressen oder Passwörter. Codes werden verschlüsselt (gehasht) gespeichert: Sie können nur direkt nach dem Erstellen gedruckt werden. Geht ein Brief verloren, erstelle einfach einen neuen Code."
+
+msgid "Add flats"
+msgstr "Wohnungen hinzufügen"
+
+msgid "One flat per line: stair and door, separated by a semicolon, comma or slash. You can paste a column pair from a spreadsheet."
+msgstr "Eine Wohnung pro Zeile: Stiege und Tür, getrennt durch Strichpunkt, Komma oder Schrägstrich. Du kannst zwei Spalten aus einer Tabelle einfügen."
+
+msgid "Or upload a CSV file:"
+msgstr "Oder eine CSV-Datei hochladen:"
+
+msgid "Create codes for the new flats and show the letters for printing"
+msgstr "Codes für die neuen Wohnungen erstellen und die Briefe zum Drucken anzeigen"
+
+msgid "%d active flat has no code yet."
+msgid_plural "%d active flats have no code yet."
+msgstr[0] "%d aktive Wohnung hat noch keinen Code."
+msgstr[1] "%d aktive Wohnungen haben noch keinen Code."
+
+msgid "Create codes for these flats and print letters"
+msgstr "Codes für diese Wohnungen erstellen und Briefe drucken"
+
+msgid "New codes for all flats, e.g. once a year. Old codes stop working."
+msgstr "Neue Codes für alle Wohnungen, z. B. einmal im Jahr. Alte Codes funktionieren dann nicht mehr."
+
+msgid "Also sign out all devices"
+msgstr "Auch alle Geräte abmelden"
+
+msgid "Create new codes for ALL flats? Every flat will need a new letter."
+msgstr "Neue Codes für ALLE Wohnungen erstellen? Jede Wohnung braucht dann einen neuen Brief."
+
+msgid "New codes for all flats"
+msgstr "Neue Codes für alle Wohnungen"
+
+msgid "All flats (%d)"
+msgstr "Alle Wohnungen (%d)"
+
+msgid "No flats yet. Add them above."
+msgstr "Noch keine Wohnungen. Füge sie oben hinzu."
+
+msgid "Code"
+msgstr "Code"
+
+msgid "Signed-in devices"
+msgstr "Angemeldete Geräte"
+
+msgid "With email reminders"
+msgstr "Mit E-Mail-Erinnerungen"
+
+msgid "created %s"
+msgstr "erstellt %s"
+
+msgid "no code yet"
+msgstr "noch kein Code"
+
+msgid "New code + letter"
+msgstr "Neuer Code + Brief"
+
+msgid "Create code + letter"
+msgstr "Code + Brief erstellen"
+
+msgid "Create a new code? The old letter stops working. Devices that are already signed in stay signed in."
+msgstr "Neuen Code erstellen? Der alte Brief funktioniert dann nicht mehr. Bereits angemeldete Geräte bleiben angemeldet."
+
+msgid "Sign out devices"
+msgstr "Geräte abmelden"
+
+msgid "Sign out all devices of this flat?"
+msgstr "Alle Geräte dieser Wohnung abmelden?"
+
+msgid "Deactivate"
+msgstr "Deaktivieren"
+
+msgid "Activate"
+msgstr "Aktivieren"
+
+msgid "Deactivate this flat? It can no longer sign in or book."
+msgstr "Diese Wohnung deaktivieren? Sie kann sich dann nicht mehr anmelden oder buchen."
+
+msgid "Delete this flat? Its devices are signed out; past bookings stay anonymous."
+msgstr "Diese Wohnung löschen? Ihre Geräte werden abgemeldet; vergangene Buchungen bleiben anonym."
+
+msgid "Please enter the 8-character code from your letter."
+msgstr "Bitte gib den 8-stelligen Code aus deinem Brief ein."
+
+msgid "This code is not valid. Please check it, or ask the administrators for a new letter."
+msgstr "Dieser Code ist ungültig. Bitte prüfe ihn oder frag die Verwaltung nach einem neuen Brief."
+
+msgid "This time slot is free – you can book it."
+msgstr "Diese Zeit ist frei – du kannst sie buchen."
+
+msgid "This booking was not found. Maybe it was already cancelled."
+msgstr "Diese Buchung wurde nicht gefunden. Vielleicht wurde sie schon storniert."
+
+msgid "This session has already started."
+msgstr "Dieser Termin hat schon begonnen."
+
+msgid "Your flat is not part of this session."
+msgstr "Deine Wohnung ist bei diesem Termin nicht dabei."
+
+msgid "This time slot does not exist."
+msgstr "Diese Zeit gibt es nicht."
+
+msgid "This time slot is not available."
+msgstr "Diese Zeit ist nicht verfügbar."
+
+msgid "The server is busy. Please try again."
+msgstr "Der Server ist gerade beschäftigt. Bitte versuch es noch einmal."
+
+msgid "Your booking could not be saved. Please try again."
+msgstr "Deine Buchung konnte nicht gespeichert werden. Bitte versuch es noch einmal."
+
+msgctxt "date format"
+msgid "F j, Y"
+msgstr "j. F Y"
+
+msgctxt "long date format"
+msgid "l, F j, Y"
+msgstr "l, j. F Y"
+
+msgctxt "time format"
+msgid "g:i a"
+msgstr "H:i"
+
+msgid "Sunday"
+msgstr "Sonntag"
+
+msgid "Monday"
+msgstr "Montag"
+
+msgid "Tuesday"
+msgstr "Dienstag"
+
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+msgid "Thursday"
+msgstr "Donnerstag"
+
+msgid "Friday"
+msgstr "Freitag"
+
+msgid "Saturday"
+msgstr "Samstag"
+
+msgctxt "weekday abbreviation"
+msgid "Sun"
+msgstr "So"
+
+msgctxt "weekday abbreviation"
+msgid "Mon"
+msgstr "Mo"
+
+msgctxt "weekday abbreviation"
+msgid "Tue"
+msgstr "Di"
+
+msgctxt "weekday abbreviation"
+msgid "Wed"
+msgstr "Mi"
+
+msgctxt "weekday abbreviation"
+msgid "Thu"
+msgstr "Do"
+
+msgctxt "weekday abbreviation"
+msgid "Fri"
+msgstr "Fr"
+
+msgctxt "weekday abbreviation"
+msgid "Sat"
+msgstr "Sa"
+
+msgid "January"
+msgstr "Jänner"
+
+msgid "February"
+msgstr "Februar"
+
+msgid "March"
+msgstr "März"
+
+msgid "April"
+msgstr "April"
+
+msgid "May"
+msgstr "Mai"
+
+msgid "June"
+msgstr "Juni"
+
+msgid "July"
+msgstr "Juli"
+
+msgid "August"
+msgstr "August"
+
+msgid "September"
+msgstr "September"
+
+msgid "October"
+msgstr "Oktober"
+
+msgid "November"
+msgstr "November"
+
+msgid "December"
+msgstr "Dezember"
+
+msgctxt "month abbreviation"
+msgid "Jan"
+msgstr "Jän"
+
+msgctxt "month abbreviation"
+msgid "Feb"
+msgstr "Feb"
+
+msgctxt "month abbreviation"
+msgid "Mar"
+msgstr "Mär"
+
+msgctxt "month abbreviation"
+msgid "Apr"
+msgstr "Apr"
+
+msgctxt "month abbreviation"
+msgid "May"
+msgstr "Mai"
+
+msgctxt "month abbreviation"
+msgid "Jun"
+msgstr "Jun"
+
+msgctxt "month abbreviation"
+msgid "Jul"
+msgstr "Jul"
+
+msgctxt "month abbreviation"
+msgid "Aug"
+msgstr "Aug"
+
+msgctxt "month abbreviation"
+msgid "Sep"
+msgstr "Sep"
+
+msgctxt "month abbreviation"
+msgid "Oct"
+msgstr "Okt"
+
+msgctxt "month abbreviation"
+msgid "Nov"
+msgstr "Nov"
+
+msgctxt "month abbreviation"
+msgid "Dec"
+msgstr "Dez"
+
+msgid "Confirm email address"
+msgstr "E-Mail-Adresse bestätigen"
+
+msgid "To the booking page"
+msgstr "Zur Buchungsseite"
+
+msgid "This link is no longer valid. Maybe the address was already confirmed or changed."
+msgstr "Dieser Link ist nicht mehr gültig. Vielleicht wurde die Adresse schon bestätigt oder geändert."
+
+msgid "Email address confirmed"
+msgstr "E-Mail-Adresse bestätigt"
+
+msgid "Thank you! From now on, booking mails go to %s."
+msgstr "Danke! Buchungsmails gehen ab jetzt an %s."
+
+msgid "Yes, confirm this address"
+msgstr "Ja, diese Adresse bestätigen"
+
+msgid "Send booking confirmations and reminders to %s?"
+msgstr "Buchungsbestätigungen und Erinnerungen an %s schicken?"
+
+msgid "{room}: booked for {date}, {time}"
+msgstr "{room}: gebucht für {date}, {time}"
+
+msgid "Hello,\n\nyou are booked:\n\n{date}\n{time}\n{details}\n\nCan't make it? Please cancel on the booking page so others can use the slot:\n{page_url}"
+msgstr "Hallo,\n\ndu hast gebucht:\n\n{date}\n{time}\n{details}\n\nDu kannst doch nicht? Bitte storniere auf der Buchungsseite, damit andere die Zeit nutzen können:\n{page_url}"
+
+msgid "Reminder – {room} on {date}, {time}"
+msgstr "Erinnerung – {room} am {date}, {time}"
+
+msgid "Hello,\n\na friendly reminder of your booking:\n\n{date}\n{time}\n{details}\n\n{instructions}\n\nBooking page: {page_url}"
+msgstr "Hallo,\n\neine kurze Erinnerung an deine Buchung:\n\n{date}\n{time}\n{details}\n\n{instructions}\n\nBuchungsseite: {page_url}"
+
+msgid "Cancelled – {room} on {date}, {time}"
+msgstr "Abgesagt – {room} am {date}, {time}"
+
+msgid "Hello,\n\nthe session on {date}, {time} has been cancelled. Your place in it has been removed – there is nothing you need to do.\n\nBooking page: {page_url}"
+msgstr "Hallo,\n\nder Termin am {date}, {time} wurde abgesagt. Dein Platz wurde entfernt – du musst nichts weiter tun.\n\nBuchungsseite: {page_url}"
+
+msgid "A place is free – {room} on {date}, {time}"
+msgstr "Ein Platz ist frei – {room} am {date}, {time}"
+
+msgid "Hello,\n\ngood news: the slot you were waiting for ({date}, {time}) has become available.\nEveryone on the waiting list gets this message – whoever books first gets it.\n\nBook now: {page_url}"
+msgstr "Hallo,\n\ngute Nachricht: Die Zeit, auf die du gewartet hast ({date}, {time}), ist frei geworden.\nAlle auf der Warteliste bekommen diese Nachricht – wer zuerst bucht, bekommt sie.\n\nJetzt buchen: {page_url}"
+
+msgid "How was it? – {room} on {date}"
+msgstr "Wie war's? – {room} am {date}"
+
+msgid "Hello,\n\nhow was your session on {date}, {time}? Rating takes about ten seconds and helps everyone:\n{rate_url}"
+msgstr "Hallo,\n\nwie war dein Termin am {date}, {time}? Die Bewertung dauert etwa zehn Sekunden und hilft allen:\n{rate_url}"
+
+msgid "Please confirm your email address"
+msgstr "Bitte bestätige deine E-Mail-Adresse"
+
+msgid "Hello,\n\nplease confirm that you want booking confirmations and reminders for the {room} at this address:\n{confirm_url}\n\nIf you did not ask for this, just ignore this message."
+msgstr "Hallo,\n\nbitte bestätige, dass du Buchungsbestätigungen und Erinnerungen für die {room} an diese Adresse bekommen möchtest:\n{confirm_url}\n\nWenn du das nicht angefordert hast, ignoriere diese Nachricht einfach."
+
+msgid "{room}: feedback for {date}, {time}"
+msgstr "{room}: Rückmeldung für {date}, {time}"
+
+msgid "Hello,\n\nfeedback for the session on {date}, {time} (flat {unit}):\n\n{answers}\n\nComment: {comment}\n\nAll ratings: {admin_url}"
+msgstr "Hallo,\n\nRückmeldung zum Termin am {date}, {time} (Wohnung {unit}):\n\n{answers}\n\nKommentar: {comment}\n\nAlle Bewertungen: {admin_url}"
+
+msgid "Booking confirmation"
+msgstr "Buchungsbestätigung"
+
+msgid "Reminder before the session"
+msgstr "Erinnerung vor dem Termin"
+
+msgid "Session cancelled (to people who joined)"
+msgstr "Termin abgesagt (an Mitmachende)"
+
+msgid "Waiting list: a place is free"
+msgstr "Warteliste: Ein Platz ist frei"
+
+msgid "Rating request after the session"
+msgstr "Bitte um Bewertung nach dem Termin"
+
+msgid "Feedback with issues (to the administrators)"
+msgstr "Rückmeldung mit Problemen (an die Verwaltung)"
+
+msgid "Name of the room"
+msgstr "Name des Raums"
+
+msgid "Date with weekday"
+msgstr "Datum mit Wochentag"
+
+msgid "Time range"
+msgstr "Uhrzeit von–bis"
+
+msgid "Kind of booking and number of people"
+msgstr "Art der Buchung und Anzahl der Personen"
+
+msgid "Reminder only: what to do when leaving (depends on the next booking)"
+msgstr "Nur Erinnerung: was beim Gehen zu tun ist (hängt von der nächsten Buchung ab)"
+
+msgid "Link to the booking page"
+msgstr "Link zur Buchungsseite"
+
+msgid "Rating request only: personal rating link"
+msgstr "Nur Bewertungsanfrage: persönlicher Bewertungslink"
+
+msgid "Email confirmation only: confirmation link"
+msgstr "Nur E-Mail-Bestätigung: Bestätigungslink"
+
+msgid "Site title"
+msgstr "Titel der Website"
+
+msgid "Feedback mail only: the flat"
+msgstr "Nur Rückmeldungsmail: die Wohnung"
+
+msgid "Feedback mail only: the answers"
+msgstr "Nur Rückmeldungsmail: die Antworten"
+
+msgid "Feedback mail only: the comment"
+msgstr "Nur Rückmeldungsmail: der Kommentar"
+
+msgid "Feedback mail only: link to the ratings screen"
+msgstr "Nur Rückmeldungsmail: Link zu den Bewertungen"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Signed in since (UTC)"
+msgstr "Angemeldet seit (UTC)"
+
+msgid "cancelled"
+msgstr "storniert"
+
+msgid "This session can not be rated (yet)."
+msgstr "Dieser Termin kann (noch) nicht bewertet werden."
+
+msgid "Your flat was not part of this session."
+msgstr "Deine Wohnung war bei diesem Termin nicht dabei."
+
+msgid "Please tap at least one answer, or \"Everything was fine\"."
+msgstr "Bitte tippe mindestens eine Antwort an oder „Alles war gut“."
+
+msgid "Something went wrong. Please try again."
+msgstr "Etwas ist schiefgelaufen. Bitte versuch es noch einmal."
+
+msgid "Please sign in again."
+msgstr "Bitte melde dich erneut an."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Zu viele Versuche. Bitte warte ein paar Minuten und versuch es dann noch einmal."
+
+msgid "Booked! Enjoy your session."
+msgstr "Gebucht! Viel Freude."
+
+msgid "You have joined the session."
+msgstr "Du bist beim Termin dabei."
+
+msgid "Your booking has been cancelled."
+msgstr "Deine Buchung wurde storniert."
+
+msgid "You have left the session."
+msgstr "Du hast den Termin verlassen."
+
+msgid "You are on the waiting list. We will email you if a place becomes free."
+msgstr "Du stehst auf der Warteliste. Wir schicken dir eine E-Mail, wenn ein Platz frei wird."
+
+msgid "You are on the waiting list. Add your email address to be notified when a place becomes free."
+msgstr "Du stehst auf der Warteliste. Gib deine E-Mail-Adresse an, um benachrichtigt zu werden, wenn ein Platz frei wird."
+
+msgid "You have left the waiting list."
+msgstr "Du hast die Warteliste verlassen."
+
+msgid "Your email address has been removed."
+msgstr "Deine E-Mail-Adresse wurde entfernt."
+
+msgid "Please enter a valid email address."
+msgstr "Bitte gib eine gültige E-Mail-Adresse ein."
+
+msgid "Almost done: please click the link we just sent to %s."
+msgstr "Fast geschafft: Bitte klick auf den Link, den wir gerade an %s geschickt haben."
+
+msgid "This session was not found."
+msgstr "Dieser Termin wurde nicht gefunden."
+
+msgid "Thank you for your feedback!"
+msgstr "Danke für deine Rückmeldung!"
+
+msgid "Not available"
+msgstr "Nicht verfügbar"
+
+msgid "Blocked by the administrators."
+msgstr "Von der Verwaltung gesperrt."
+
+msgid "This time slot has already started."
+msgstr "Diese Zeit hat schon begonnen."
+
+msgid "You can book up to %d days in advance."
+msgstr "Du kannst bis zu %d Tage im Voraus buchen."
+
+msgid "Sorry, someone else just booked this time slot."
+msgstr "Schade, jemand anderes hat diese Zeit gerade gebucht."
+
+msgid "Please choose how you want to book."
+msgstr "Bitte wähle, wie du buchen möchtest."
+
+msgid "This session is private. You can join the waiting list instead."
+msgstr "Dieser Termin ist privat. Du kannst dich stattdessen auf die Warteliste setzen."
+
+msgid "Please tell us how many people you will be."
+msgstr "Bitte gib an, wie viele Personen ihr seid."
+
+msgid "This session is only for: %s."
+msgstr "Dieser Termin ist nur für: %s."
+
+msgid "Sorry, this session is full. You can join the waiting list."
+msgstr "Schade, dieser Termin ist voll. Du kannst dich auf die Warteliste setzen."
+
+msgid "Only %d place is left."
+msgid_plural "Only %d places are left."
+msgstr[0] "Nur noch %d Platz frei."
+msgstr[1] "Nur noch %d Plätze frei."
+
+msgid "Your flat is already part of this session."
+msgstr "Deine Wohnung ist bei diesem Termin schon dabei."
+
+msgid "Your flat has already used its %1$d booking \"%2$s\" in %3$s. Open sessions are still possible."
+msgid_plural "Your flat has already used its %1$d bookings \"%2$s\" in %3$s. Open sessions are still possible."
+msgstr[0] "Deine Wohnung hat ihre %1$d Buchung „%2$s“ im %3$s schon verwendet. Offene Termine sind weiterhin möglich."
+msgstr[1] "Deine Wohnung hat ihre %1$d Buchungen „%2$s“ im %3$s schon verwendet. Offene Termine sind weiterhin möglich."
+
+msgid "To keep it fair, a flat can book at most %d slot in a row."
+msgid_plural "To keep it fair, a flat can book at most %d slots in a row."
+msgstr[0] "Damit es fair bleibt, kann eine Wohnung höchstens %d Zeit hintereinander buchen."
+msgstr[1] "Damit es fair bleibt, kann eine Wohnung höchstens %d Zeiten hintereinander buchen."
+
+msgid "Please quickly rate your last session first."
+msgstr "Bitte bewerte zuerst kurz deinen letzten Termin."
+
+msgid "Loading…"
+msgstr "Wird geladen …"
+
+msgid "Please enable JavaScript to use the booking page."
+msgstr "Bitte aktiviere JavaScript, um die Buchungsseite zu nutzen."
+
+msgid "The booking page could not be loaded. Please try again later."
+msgstr "Die Buchungsseite konnte nicht geladen werden. Bitte versuch es später noch einmal."
+
+msgid "Sign in"
+msgstr "Anmelden"
+
+msgid "Your flat has received a letter with a personal code. Enter it once – this device will then stay signed in."
+msgstr "Deine Wohnung hat einen Brief mit einem persönlichen Code bekommen. Gib ihn einmal ein – dieses Gerät bleibt dann angemeldet."
+
+msgid "Code from your letter"
+msgstr "Code aus deinem Brief"
+
+msgid "Signing in…"
+msgstr "Anmeldung läuft …"
+
+msgid "Welcome! You are signed in."
+msgstr "Willkommen! Du bist angemeldet."
+
+msgid "Lost your letter? Please ask the administrators for a new code."
+msgstr "Brief verloren? Bitte frag die Verwaltung nach einem neuen Code."
+
+msgid "Bookings are anonymous: others only see the kind of session and the number of people – never which flat booked."
+msgstr "Buchungen sind anonym: Andere sehen nur die Art des Termins und die Anzahl der Personen – nie, welche Wohnung gebucht hat."
+
+msgid "Sign out"
+msgstr "Abmelden"
+
+msgid "Sign out on this device? You will need the code from your letter to sign in again."
+msgstr "Auf diesem Gerät abmelden? Zum erneuten Anmelden brauchst du den Code aus deinem Brief."
+
+msgid "Email reminders"
+msgstr "E-Mail-Erinnerungen"
+
+msgid "Optional: get a confirmation, a reminder before your session (with what to do when you leave), news from the waiting list and a short rating request."
+msgstr "Optional: Bekomme eine Bestätigung, eine Erinnerung vor deinem Termin (mit Hinweisen fürs Gehen), Neues von der Warteliste und eine kurze Bitte um Bewertung."
+
+msgid "Mails go to %s."
+msgstr "Mails gehen an %s."
+
+msgid "No email address yet – you will only see everything here on the page."
+msgstr "Noch keine E-Mail-Adresse – du siehst alles nur hier auf der Seite."
+
+msgid "Waiting for confirmation of %s – please click the link in the email."
+msgstr "Warte auf Bestätigung von %s – bitte klick auf den Link in der E-Mail."
+
+msgid "Your email address"
+msgstr "Deine E-Mail-Adresse"
+
+msgid "Remove my email address"
+msgstr "Meine E-Mail-Adresse entfernen"
+
+msgid "Your address is only used for these mails and is never shown to anyone."
+msgstr "Deine Adresse wird nur für diese Mails verwendet und niemandem angezeigt."
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid "Tomorrow"
+msgstr "Morgen"
+
+msgid "My bookings"
+msgstr "Meine Buchungen"
+
+msgid "You have no bookings yet. Tap a free time below to book."
+msgstr "Du hast noch keine Buchungen. Tippe unten auf eine freie Zeit, um zu buchen."
+
+msgid "Book a time"
+msgstr "Zeit buchen"
+
+msgid "There are no bookable times in the coming days."
+msgstr "In den nächsten Tagen gibt es keine buchbaren Zeiten."
+
+msgid "Legend"
+msgstr "Legende"
+
+msgid "Open – you can join"
+msgstr "Offen – du kannst mitmachen"
+
+msgid "Taken"
+msgstr "Belegt"
+
+msgid "full"
+msgstr "voll"
+
+msgid "This time is not available."
+msgstr "Diese Zeit ist nicht verfügbar."
+
+msgid "This time can not be booked yet."
+msgstr "Diese Zeit kann noch nicht gebucht werden."
+
+msgid "In progress"
+msgstr "Läuft gerade"
+
+msgid "Yours"
+msgstr "Deins"
+
+msgid "Joined"
+msgstr "Dabei"
+
+msgid "Waiting"
+msgstr "Wartend"
+
+msgid "You are on the waiting list."
+msgstr "Du stehst auf der Warteliste."
+
+msgid "Good news: this time is free now – book it before someone else does!"
+msgstr "Gute Nachricht: Diese Zeit ist jetzt frei – buch sie, bevor es jemand anderes tut!"
+
+msgid "Book"
+msgstr "Buchen"
+
+msgid "Join"
+msgstr "Mitmachen"
+
+msgid "Wait"
+msgstr "Warten"
+
+msgid "%1$s of %2$s places"
+msgstr "%1$s von %2$s Plätzen"
+
+msgid "Places left: %s"
+msgstr "Freie Plätze: %s"
+
+msgid "1 waiting"
+msgstr "1 wartet"
+
+msgid "%s waiting"
+msgstr "%s warten"
+
+msgid "How do you want to book?"
+msgstr "Wie möchtest du buchen?"
+
+msgid "How many of you?"
+msgstr "Wie viele seid ihr?"
+
+msgid "How many of you? (optional)"
+msgstr "Wie viele seid ihr? (optional)"
+
+msgid "One less: %s"
+msgstr "Eine*r weniger: %s"
+
+msgid "One more: %s"
+msgstr "Eine*r mehr: %s"
+
+msgid "Book now"
+msgstr "Jetzt buchen"
+
+msgid "Join this session"
+msgstr "Bei diesem Termin mitmachen"
+
+msgid "Join now"
+msgstr "Jetzt mitmachen"
+
+msgid "or"
+msgstr "oder"
+
+msgid "Join the waiting list"
+msgstr "Auf die Warteliste"
+
+msgid "Leave the waiting list"
+msgstr "Warteliste verlassen"
+
+msgid "Cancel booking"
+msgstr "Buchung stornieren"
+
+msgid "Really cancel this booking?"
+msgstr "Diese Buchung wirklich stornieren?"
+
+msgid "Leave session"
+msgstr "Termin verlassen"
+
+msgid "Really leave this session?"
+msgstr "Diesen Termin wirklich verlassen?"
+
+msgid "One moment…"
+msgstr "Einen Moment …"
+
+msgid "How was it?"
+msgstr "Wie war's?"
+
+msgid "How was your last session?"
+msgstr "Wie war dein letzter Termin?"
+
+msgid "Rate now (10 seconds)"
+msgstr "Jetzt bewerten (10 Sekunden)"
+
+msgid "or tell us more:"
+msgstr "oder erzähl uns mehr:"
+
+msgid "bad"
+msgstr "schlecht"
+
+msgid "okay"
+msgstr "okay"
+
+msgid "good"
+msgstr "gut"
+
+msgid "Anything wrong?"
+msgstr "Gab es ein Problem?"
+
+msgid "Comment (optional)"
+msgstr "Kommentar (optional)"
+
+msgid "Send"
+msgstr "Senden"
+
+msgid "Thank you!"
+msgstr "Danke!"
+
+msgid "Your feedback has been saved."
+msgstr "Deine Rückmeldung wurde gespeichert."
+
+msgid "This session has already been rated by your flat. Thank you!"
+msgstr "Dieser Termin wurde von deiner Wohnung schon bewertet. Danke!"
+
+msgid "Your flat's bookings (%s):"
+msgstr "Buchungen deiner Wohnung (%s):"
+
+msgid "%1$s %2$s of %3$s"
+msgstr "%1$s: %2$s von %3$s"
+
+msgid "Max. %1$s bookings \"%2$s\" per flat and month"
+msgstr "Max. %1$s Buchungen „%2$s“ pro Wohnung und Monat"
+
+msgid "max. %s slots in a row"
+msgstr "max. %s Zeiten hintereinander"
+
+msgid "bookable %s days ahead"
+msgstr "%s Tage im Voraus buchbar"
+
+msgid "up to %s people"
+msgstr "bis zu %s Personen"
+
+msgid "Stair %1$s · Door %2$s"
+msgstr "Stiege %1$s · Tür %2$s"
+
+msgid "Sauna"
+msgstr "Sauna"
+
+msgid "Private"
+msgstr "Privat"
+
+msgid "Only the flat that booked. Others can join the waiting list."
+msgstr "Nur die Wohnung, die gebucht hat. Andere können sich auf die Warteliste setzen."
+
+msgid "Open for everyone"
+msgstr "Offen für alle"
+
+msgid "Open · everyone"
+msgstr "Offen · alle"
+
+msgid "Neighbours can join you."
+msgstr "Nachbar*innen können mitmachen."
+
+msgid "Open for women"
+msgstr "Offen für Frauen"
+
+msgid "Open · women"
+msgstr "Offen · Frauen"
+
+msgid "Only women can join."
+msgstr "Nur Frauen können mitmachen."
+
+msgid "Open for men"
+msgstr "Offen für Männer"
+
+msgid "Open · men"
+msgstr "Offen · Männer"
+
+msgid "Only men can join."
+msgstr "Nur Männer können mitmachen."
+
+msgid "Women"
+msgstr "Frauen"
+
+msgid "Men"
+msgstr "Männer"
+
+msgid "Diverse"
+msgstr "Divers"
+
+msgid "Aufguss"
+msgstr "Aufguss"
+
+msgid "There will be an Aufguss (water with essential oils on the stones)."
+msgstr "Es gibt einen Aufguss (Wasser mit ätherischen Ölen auf die Steine)."
+
+msgid "Keep warm"
+msgstr "Warm halten"
+
+msgid "Asks the people before you to leave the sauna on, so it is hot when you arrive."
+msgstr "Bittet die Leute vor dir, die Sauna eingeschaltet zu lassen, damit sie heiß ist, wenn du kommst."
+
+msgid "Was it clean?"
+msgstr "War es sauber?"
+
+msgid "Was it warm and ready?"
+msgstr "War sie warm und bereit?"
+
+msgid "Dirty"
+msgstr "Schmutzig"
+
+msgid "Not heated"
+msgstr "Nicht aufgeheizt"
+
+msgid "Something broken"
+msgstr "Etwas kaputt"
+
+msgid "Things left behind"
+msgstr "Sachen liegen gelassen"
+
+msgid "Previous people stayed too long"
+msgstr "Vorherige sind zu lange geblieben"
+
+msgid "Other problem"
+msgstr "Anderes Problem"
+
+msgid "When you leave: switch off the oven, leave the door and the vent open so the sauna can dry, wipe the benches and take your towels and rubbish with you."
+msgstr "Wenn du gehst: Ofen ausschalten, Tür und Lüftung offen lassen, damit die Sauna trocknen kann, Bänke abwischen und Handtücher und Müll mitnehmen."
+
+msgid "The people after you asked to keep the sauna warm: please leave the oven on and close the door. Still wipe the benches and take your towels and rubbish with you."
+msgstr "Die Leute nach dir möchten die Sauna warm halten: Bitte lass den Ofen an und schließ die Tür. Bänke trotzdem abwischen und Handtücher und Müll mitnehmen."
+
+msgid "Your flat also has the next slot – leave the oven on."
+msgstr "Deine Wohnung hat auch die nächste Zeit – lass den Ofen an."
+
+msgid "You asked the people before you to keep the sauna warm."
+msgstr "Du hast die Leute vor dir gebeten, die Sauna warm zu halten."
+
+msgid "When leaving (cooldown)"
+msgstr "Beim Gehen (abkühlen)"
+
+msgid "Shown in reminders and with the own booking, unless the next people asked to keep it warm."
+msgstr "Wird in Erinnerungen und bei der eigenen Buchung angezeigt, außer die Nächsten möchten sie warm halten."
+
+msgid "When leaving (keep warm)"
+msgstr "Beim Gehen (warm halten)"
+
+msgid "Used instead when the next booking asks to keep the sauna warm."
+msgstr "Wird stattdessen verwendet, wenn die nächste Buchung die Sauna warm halten möchte."
+
+msgid "Leave empty to use the text shown in grey."
+msgstr "Leer lassen, um den grau angezeigten Text zu verwenden."
+
+msgid "🔥 Sauna reminder: {date}, {time}"
+msgstr "🔥 Sauna-Erinnerung: {date}, {time}"

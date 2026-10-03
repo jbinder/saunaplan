@@ -1,0 +1,50 @@
+# Local development environment.
+#   docker compose up -d
+#   WordPress: http://localhost:8081   Mailpit: http://localhost:8026
+#   wp-cli:    docker compose run --rm cli wp <command>
+x-wp-env: &wp-env
+  WORDPRESS_DB_HOST: db
+  WORDPRESS_DB_USER: wordpress
+  WORDPRESS_DB_PASSWORD: wordpress
+  WORDPRESS_DB_NAME: wordpress
+
+x-wp-volumes: &wp-volumes
+  - wordpress:/var/www/html
+  - ./saunaplan:/var/www/html/wp-content/plugins/saunaplan
+  - ./dev/mu-plugins:/var/www/html/wp-content/mu-plugins
+
+services:
+  db:
+    image: mariadb:11
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+      MARIADB_ROOT_PASSWORD: root
+    volumes:
+      - db:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:php8.3-apache
+    depends_on: [db]
+    ports: ["8081:80"]
+    environment:
+      <<: *wp-env
+      WORDPRESS_DEBUG: "1"
+    volumes: *wp-volumes
+
+  cli:
+    image: wordpress:cli-php8.3
+    user: "33:33"
+    depends_on: [db, wordpress]
+    environment: *wp-env
+    volumes: *wp-volumes
+    profiles: [cli]
+
+  mailpit:
+    image: axllent/mailpit
+    ports: ["8026:8025"]
+
+volumes:
+  wordpress:
+  db:

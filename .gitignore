@@ -1,0 +1,25 @@
+# Local tool state
+.claude/settings.local.json
+.remember/
+
+# Dependencies (if Composer/npm tooling is added later)
+/vendor/
+node_modules/
+
+# Build output, e.g. release zips of the plugin
+/build/
+/dist/
+*.zip
+
+# Logs and local overrides
+*.log
+.env
+docker-compose.override.yml
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db

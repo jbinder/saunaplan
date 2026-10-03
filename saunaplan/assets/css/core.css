@@ -1,0 +1,758 @@
+/* Saunaplan – booking page (generic). Room themes override the custom properties. */
+
+.saunaplan,
+.sp-dialog {
+	--sp-accent: #2563eb;
+	--sp-accent-text: #fff;
+	--sp-accent-soft: rgba(37, 99, 235, 0.08);
+	--sp-free: #1b7f3b;
+	--sp-free-bg: rgba(27, 127, 59, 0.1);
+	--sp-open: #1d5fbf;
+	--sp-open-bg: rgba(29, 95, 191, 0.1);
+	--sp-private: #6b6b6b;
+	--sp-private-bg: rgba(128, 128, 128, 0.12);
+	--sp-blocked: #8a8a8a;
+	--sp-blocked-bg: repeating-linear-gradient(45deg, rgba(128, 128, 128, 0.08) 0 8px, rgba(128, 128, 128, 0.16) 8px 16px);
+	--sp-danger: #b3261e;
+	--sp-border: rgba(128, 128, 128, 0.3);
+	--sp-muted: rgba(110, 110, 110, 1);
+	--sp-card-bg: rgba(128, 128, 128, 0.05);
+	--sp-radius: 12px;
+	box-sizing: border-box;
+	font-size: 17px;
+	line-height: 1.45;
+}
+
+.saunaplan *,
+.sp-dialog * {
+	box-sizing: border-box;
+}
+
+.saunaplan {
+	position: relative;
+	max-width: 760px;
+	margin: 1.5em auto;
+}
+
+.sp-state-free { --c: var(--sp-free); --bg: var(--sp-free-bg); }
+.sp-state-open { --c: var(--sp-open); --bg: var(--sp-open-bg); }
+.sp-state-full,
+.sp-state-private { --c: var(--sp-private); --bg: var(--sp-private-bg); }
+.sp-state-blocked { --c: var(--sp-blocked); --bg: var(--sp-blocked-bg); }
+
+/* -------------------------------------------------------------- basics */
+
+.sp-h2 {
+	font-size: 1.25em;
+	margin: 0 0 0.6em;
+}
+
+.sp-h3 {
+	font-size: 1em;
+	margin: 1.2em 0 0.5em;
+}
+
+.sp-muted {
+	color: var(--sp-muted);
+	font-size: 0.9em;
+}
+
+.sp-error {
+	color: var(--sp-danger);
+	font-weight: 600;
+	margin: 0.5em 0;
+}
+
+.sp-error:empty {
+	display: none;
+}
+
+.sp-notice {
+	background: var(--sp-card-bg);
+	border-left: 4px solid var(--sp-accent);
+	padding: 0.6em 0.8em;
+	border-radius: 4px;
+}
+
+.sp-card {
+	border: 1px solid var(--sp-border);
+	border-radius: var(--sp-radius);
+	background: var(--sp-card-bg);
+	padding: 1em 1.1em;
+	margin-bottom: 0.8em;
+}
+
+.sp-section {
+	margin: 1.6em 0;
+}
+
+.sp-label {
+	display: block;
+	font-weight: 600;
+	margin: 0.9em 0 0.3em;
+}
+
+.sp-input {
+	display: block;
+	width: 100%;
+	font: inherit;
+	padding: 0.7em 0.8em;
+	border: 2px solid var(--sp-border);
+	border-radius: 10px;
+	background: transparent;
+	color: inherit;
+}
+
+.sp-input:focus {
+	outline: none;
+	border-color: var(--sp-accent);
+}
+
+.sp-code-input {
+	font-size: 1.5em;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ------------------------------------------------------------- buttons */
+
+.sp-btn {
+	appearance: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4em;
+	font: inherit;
+	font-weight: 600;
+	min-height: 44px;
+	padding: 0.5em 1em;
+	border: 2px solid var(--sp-border);
+	border-radius: 10px;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.sp-btn:hover {
+	border-color: currentColor;
+}
+
+.sp-btn:disabled {
+	opacity: 0.55;
+	cursor: default;
+}
+
+.sp-btn-primary {
+	background: var(--sp-accent);
+	border-color: var(--sp-accent);
+	color: var(--sp-accent-text);
+}
+
+.sp-btn-primary:hover {
+	border-color: var(--sp-accent);
+	filter: brightness(1.08);
+}
+
+.sp-btn-danger {
+	color: var(--sp-danger);
+	border-color: currentColor;
+}
+
+.sp-btn-big {
+	display: flex;
+	width: 100%;
+	min-height: 54px;
+	font-size: 1.05em;
+	margin-top: 1em;
+}
+
+.sp-btn-small {
+	min-height: 38px;
+	padding: 0.3em 0.7em;
+	font-size: 0.85em;
+}
+
+.sp-round {
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border-radius: 50%;
+	font-size: 1.4em;
+}
+
+.saunaplan button:focus-visible,
+.sp-dialog button:focus-visible,
+.sp-dialog input:focus-visible,
+.sp-toggle:focus-within {
+	outline: 3px solid var(--sp-accent);
+	outline-offset: 2px;
+}
+
+/* -------------------------------------------------------------- login */
+
+.sp-login {
+	max-width: 440px;
+	margin: 0 auto;
+	padding: 1.4em;
+}
+
+.sp-privacy {
+	font-size: 0.82em;
+}
+
+/* --------------------------------------------------------------- top */
+
+.sp-topbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5em;
+	padding-bottom: 0.6em;
+	border-bottom: 1px solid var(--sp-border);
+}
+
+.sp-me {
+	font-weight: 700;
+}
+
+.sp-topbar-actions {
+	display: flex;
+	gap: 0.4em;
+	flex-wrap: wrap;
+}
+
+.sp-rating-banner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.6em;
+	margin-top: 1em;
+	border-color: var(--sp-accent);
+	border-width: 2px;
+}
+
+.sp-rating-banner p {
+	margin: 0;
+}
+
+.sp-usage {
+	font-size: 0.9em;
+	color: var(--sp-muted);
+	margin: 0.6em 0 0;
+}
+
+/* ------------------------------------------------------- my bookings */
+
+.sp-mine-card {
+	border-left: 6px solid var(--c, var(--sp-accent));
+}
+
+.sp-mine-when {
+	font-size: 1.05em;
+	margin-bottom: 0.3em;
+}
+
+.sp-mine-what {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4em 0.6em;
+	margin-bottom: 0.3em;
+}
+
+.sp-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3em;
+	padding: 0.15em 0.6em;
+	border-radius: 999px;
+	background: var(--bg, var(--sp-private-bg));
+	color: var(--c, inherit);
+	font-weight: 600;
+	font-size: 0.9em;
+}
+
+.sp-title-small {
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+.sp-card-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	margin-top: 0.6em;
+}
+
+.sp-action {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+
+.sp-action .sp-btn {
+	width: 100%;
+}
+
+.sp-notes {
+	margin: 0.5em 0 0;
+	padding-left: 1.2em;
+	font-size: 0.92em;
+}
+
+.sp-notes li + li {
+	margin-top: 0.3em;
+}
+
+/* ------------------------------------------------------------ slots */
+
+.sp-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3em 1em;
+	list-style: none;
+	margin: -0.3em 0 0.8em;
+	padding: 0;
+	font-size: 0.85em;
+	color: var(--sp-muted);
+}
+
+.sp-legend li {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35em;
+}
+
+.sp-dot {
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	background: var(--c);
+}
+
+.sp-day {
+	margin-bottom: 1.2em;
+}
+
+.sp-day-title {
+	margin: 0 0 0.4em;
+	padding: 0.4em 0;
+	font-size: 1em;
+}
+
+.sp-slots {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 6px;
+}
+
+.sp-slot {
+	appearance: none;
+	display: grid;
+	grid-template-columns: 6.4em 1fr auto;
+	align-items: center;
+	gap: 0.6em;
+	width: 100%;
+	min-height: 56px;
+	padding: 0.5em 0.8em;
+	border: 1px solid var(--sp-border);
+	border-left: 6px solid var(--c);
+	border-radius: 10px;
+	background: var(--bg);
+	color: inherit;
+	font: inherit;
+	text-align: left;
+	cursor: pointer;
+}
+
+.sp-slot:hover {
+	border-color: var(--c);
+}
+
+.sp-slot.is-mine {
+	box-shadow: inset 0 0 0 2px var(--sp-accent);
+}
+
+.sp-slot.is-started {
+	opacity: 0.7;
+}
+
+.sp-slot-time {
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+}
+
+.sp-slot-main {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.15em 0.6em;
+	min-width: 0;
+}
+
+.sp-slot-state {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35em;
+	color: var(--c);
+	font-weight: 700;
+}
+
+.sp-slot-icon {
+	display: inline-flex;
+	justify-content: center;
+	min-width: 1.2em;
+}
+
+.sp-people {
+	font-size: 0.88em;
+	color: var(--sp-muted);
+}
+
+.sp-slot-action {
+	font-size: 0.85em;
+	font-weight: 700;
+	color: var(--c);
+	white-space: nowrap;
+}
+
+.sp-badges {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.3em;
+}
+
+.sp-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25em;
+	font-size: 0.85em;
+	padding: 0 0.45em;
+	border-radius: 6px;
+	background: rgba(128, 128, 128, 0.12);
+}
+
+.sp-slot .sp-badge-label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+.sp-footer {
+	margin-top: 2em;
+	padding-top: 0.8em;
+	border-top: 1px solid var(--sp-border);
+}
+
+/* ------------------------------------------------------------ dialog */
+
+.sp-dialog {
+	width: min(560px, calc(100vw - 16px));
+	max-height: calc(100dvh - 16px);
+	padding: 0;
+	border: none;
+	border-radius: 16px;
+	background: #fff;
+	color: #1d1d1d;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.sp-dialog::backdrop {
+	background: rgba(0, 0, 0, 0.45);
+}
+
+.sp-dialog-head {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1em;
+	padding: 0.8em 1.1em;
+	background: inherit;
+	border-bottom: 1px solid var(--sp-border);
+}
+
+.sp-dialog-title {
+	margin: 0;
+	font-size: 1.15em;
+}
+
+.sp-dialog-close {
+	appearance: none;
+	flex: none;
+	width: 44px;
+	height: 44px;
+	border: none;
+	border-radius: 50%;
+	background: rgba(128, 128, 128, 0.14);
+	color: inherit;
+	font-size: 1.6em;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.sp-dialog-body {
+	padding: 1em 1.1em 1.3em;
+}
+
+.sp-summary {
+	border-left: 6px solid var(--c);
+	background: var(--bg);
+	border-radius: 10px;
+	padding: 0.6em 0.9em;
+	margin-bottom: 0.6em;
+}
+
+.sp-summary p {
+	margin: 0.2em 0;
+}
+
+.sp-or {
+	text-align: center;
+	margin: 1em 0 0.4em;
+}
+
+.sp-modes {
+	display: grid;
+	gap: 8px;
+}
+
+.sp-mode {
+	appearance: none;
+	display: flex;
+	align-items: center;
+	gap: 0.8em;
+	width: 100%;
+	min-height: 60px;
+	padding: 0.6em 0.9em;
+	border: 2px solid var(--sp-border);
+	border-radius: 12px;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	text-align: left;
+	cursor: pointer;
+}
+
+.sp-mode[aria-pressed="true"] {
+	border-color: var(--sp-accent);
+	background: var(--sp-accent-soft);
+	box-shadow: inset 0 0 0 1px var(--sp-accent);
+}
+
+.sp-mode-icon {
+	font-size: 1.6em;
+	min-width: 1.4em;
+	text-align: center;
+}
+
+.sp-mode-text,
+.sp-toggle-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.sp-steppers {
+	display: grid;
+	gap: 8px;
+}
+
+.sp-stepper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.6em;
+}
+
+.sp-stepper-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	font-weight: 600;
+}
+
+.sp-symbol {
+	font-size: 1.3em;
+	min-width: 1.2em;
+	text-align: center;
+}
+
+.sp-stepper-controls {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6em;
+}
+
+.sp-stepper-value {
+	min-width: 1.6em;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+}
+
+.sp-toggle {
+	display: flex;
+	align-items: center;
+	gap: 0.7em;
+	margin-top: 0.8em;
+	padding: 0.6em 0.8em;
+	border: 2px solid var(--sp-border);
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.sp-toggle input {
+	width: 26px;
+	height: 26px;
+	flex: none;
+	accent-color: var(--sp-accent);
+}
+
+.sp-toggle-icon {
+	font-size: 1.4em;
+}
+
+/* ------------------------------------------------------------ rating */
+
+.sp-quick {
+	margin-top: 0.4em;
+}
+
+.sp-scales {
+	display: grid;
+	gap: 10px;
+}
+
+.sp-scale {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.4em;
+}
+
+.sp-scale-label {
+	font-weight: 600;
+}
+
+.sp-faces {
+	display: inline-flex;
+	gap: 6px;
+}
+
+.sp-face {
+	appearance: none;
+	width: 54px;
+	height: 54px;
+	border: 2px solid var(--sp-border);
+	border-radius: 50%;
+	background: transparent;
+	font-size: 1.7em;
+	line-height: 1;
+	cursor: pointer;
+	filter: grayscale(0.7);
+}
+
+.sp-face[aria-pressed="true"] {
+	border-color: var(--sp-accent);
+	box-shadow: inset 0 0 0 2px var(--sp-accent);
+	filter: none;
+	transform: scale(1.06);
+}
+
+.sp-issues {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.sp-issue {
+	appearance: none;
+	min-height: 42px;
+	padding: 0.3em 0.9em;
+	border: 2px solid var(--sp-border);
+	border-radius: 999px;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	font-size: 0.92em;
+	cursor: pointer;
+}
+
+.sp-issue[aria-pressed="true"] {
+	border-color: var(--sp-danger);
+	color: var(--sp-danger);
+	font-weight: 700;
+}
+
+/* ------------------------------------------------------------- toast */
+
+.sp-toast {
+	position: fixed;
+	left: 50%;
+	bottom: 16px;
+	z-index: 100000;
+	max-width: calc(100vw - 32px);
+	transform: translate(-50%, 200%);
+	padding: 0.8em 1.1em;
+	border-radius: 12px;
+	background: #1f2937;
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+	transition: transform 0.25s ease;
+	pointer-events: none;
+}
+
+.sp-toast.is-visible {
+	transform: translate(-50%, 0);
+}
+
+.sp-toast.is-error {
+	background: var(--sp-danger, #b3261e);
+}
+
+/* ------------------------------------------------------------ phones */
+
+@media (max-width: 520px) {
+	.saunaplan {
+		font-size: 16px;
+	}
+
+	.sp-slot {
+		grid-template-columns: 1fr auto;
+		grid-template-areas: "time action" "main main";
+		row-gap: 0.25em;
+	}
+
+	.sp-slot-time { grid-area: time; }
+	.sp-slot-main { grid-area: main; }
+	.sp-slot-action { grid-area: action; }
+
+	.sp-dialog {
+		width: 100vw;
+		max-width: 100vw;
+		max-height: 92dvh;
+		margin: auto 0 0;
+		border-radius: 16px 16px 0 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.sp-toast {
+		transition: none;
+	}
+}

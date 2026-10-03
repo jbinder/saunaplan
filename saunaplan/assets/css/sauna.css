@@ -1,0 +1,19 @@
+/* Saunaplan – sauna theme: warm wood and ember colours on top of core.css. */
+
+.saunaplan,
+.sp-dialog {
+	--sp-accent: #b4521f;
+	--sp-accent-text: #fff;
+	--sp-accent-soft: rgba(180, 82, 31, 0.09);
+	--sp-free: #2f7d3a;
+	--sp-free-bg: rgba(47, 125, 58, 0.1);
+	--sp-open: #a35d00;
+	--sp-open-bg: rgba(214, 140, 30, 0.13);
+	--sp-private: #7a6a5c;
+	--sp-private-bg: rgba(122, 106, 92, 0.13);
+	--sp-card-bg: rgba(180, 120, 60, 0.05);
+}
+
+.saunaplan .sp-rating-banner {
+	background: rgba(180, 82, 31, 0.06);
+}

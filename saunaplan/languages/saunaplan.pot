@@ -1,0 +1,1966 @@
+# Copyright (C) 2026 
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Saunaplan 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/saunaplan\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-03T07:43:50+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: saunaplan\n"
+
+#. Plugin Name of the plugin
+#: saunaplan.php
+#: includes/core/class-privacy.php:19
+#: includes/core/class-privacy.php:27
+#: includes/core/class-privacy.php:53
+msgid "Saunaplan"
+msgstr ""
+
+#. Description of the plugin
+#: saunaplan.php
+msgid "Book the building's sauna: private or open sessions, waiting list, Aufguss, reminders with cooldown instructions, quick ratings and fair-use rules."
+msgstr ""
+
+#: admin/class-admin.php:38
+#: admin/views/schedule.php:26
+msgid "Schedule"
+msgstr ""
+
+#: admin/class-admin.php:39
+#: admin/views/units.php:23
+msgid "Flats"
+msgstr ""
+
+#: admin/class-admin.php:40
+#: admin/views/series.php:40
+msgid "Recurring sessions"
+msgstr ""
+
+#: admin/class-admin.php:41
+#: admin/views/ratings.php:24
+#: admin/views/ratings.php:45
+msgid "Ratings"
+msgstr ""
+
+#: admin/class-admin.php:42
+#: admin/views/settings.php:37
+msgid "Settings"
+msgstr ""
+
+#: admin/class-admin.php:44
+#: admin/views/letters.php:22
+#: admin/views/units.php:42
+msgid "Code letters"
+msgstr ""
+
+#. translators: 1: new flats, 2: flats in the list
+#: admin/class-admin.php:143
+#, php-format
+msgid "%1$d new flats added (%2$d in the list, existing ones were kept)."
+msgstr ""
+
+#. translators: %s: line numbers
+#: admin/class-admin.php:149
+#, php-format
+msgid "These lines could not be read: %s."
+msgstr ""
+
+#. translators: 1: flat, 2: number of devices
+#: admin/class-admin.php:176
+#, php-format
+msgid "Flat %1$s: %2$d devices signed out."
+msgstr ""
+
+#. translators: %s: flat
+#: admin/class-admin.php:185
+#, php-format
+msgid "Flat %s deactivated – it can no longer sign in or book."
+msgstr ""
+
+#. translators: %s: flat
+#: admin/class-admin.php:187
+#, php-format
+msgid "Flat %s activated."
+msgstr ""
+
+#. translators: %s: flat
+#: admin/class-admin.php:193
+#, php-format
+msgid "Flat %s deleted."
+msgstr ""
+
+#: admin/class-admin.php:209
+msgid "All active flats already have a code."
+msgstr ""
+
+#: admin/class-admin.php:245
+msgid "Please choose a kind of session."
+msgstr ""
+
+#: admin/class-admin.php:248
+msgid "Please select at least one weekday."
+msgstr ""
+
+#: admin/class-admin.php:251
+msgid "Please enter a valid start date."
+msgstr ""
+
+#: admin/class-admin.php:254
+msgid "The end date must be a valid date after the start date."
+msgstr ""
+
+#: admin/class-admin.php:257
+msgid "Please enter a start time."
+msgstr ""
+
+#: admin/class-admin.php:267
+msgid "Recurring session saved."
+msgstr ""
+
+#. translators: %s: list of dates/times
+#: admin/class-admin.php:270
+#, php-format
+msgid "Already booked by residents (these bookings stay, the recurring session is not shown there): %s"
+msgstr ""
+
+#: admin/class-admin.php:301
+msgid "Recurring session deleted."
+msgstr ""
+
+#: admin/class-admin.php:307
+msgid "Booking cancelled. People who joined and the waiting list were notified."
+msgstr ""
+
+#: admin/class-admin.php:307
+msgid "Booking not found."
+msgstr ""
+
+#: admin/class-admin.php:317
+msgid "This date of the recurring session was cancelled."
+msgstr ""
+
+#. translators: 1: weekdays, 2: interval in weeks
+#: admin/class-admin.php:356
+#, php-format
+msgid "Weekly on %1$s"
+msgstr ""
+
+#. translators: 1: weekdays, 2: interval in weeks
+#: admin/class-admin.php:356
+#, php-format
+msgid "Every %2$d weeks on %1$s"
+msgstr ""
+
+#. translators: %s: date
+#: admin/class-admin.php:360
+#, php-format
+msgid "from %s"
+msgstr ""
+
+#. translators: %s: date
+#: admin/class-admin.php:363
+#, php-format
+msgid "until %s"
+msgstr ""
+
+#. translators: 1: shortcode, 2: settings link
+#: admin/class-admin.php:377
+#, php-format
+msgid "Booking page: <strong>no page selected.</strong> Create a page with %1$s and choose it in the <a href=\"%2$s\">settings</a>."
+msgstr ""
+
+#: admin/class-admin.php:387
+msgid "Booking page:"
+msgstr ""
+
+#: admin/class-admin.php:392
+msgid "Copied!"
+msgstr ""
+
+#: admin/class-admin.php:393
+msgid "Copy link"
+msgstr ""
+
+#: admin/class-admin.php:396
+msgid "Unlisted – only reachable via this link"
+msgstr ""
+
+#: admin/class-admin.php:400
+msgid "The page is not published yet, so residents cannot open it."
+msgstr ""
+
+#: admin/class-admin.php:403
+msgid "The [saunaplan] shortcode was not found on this page. Add it there, e.g. with a Shortcode block."
+msgstr ""
+
+#. translators: %s: room name
+#: admin/class-admin.php:414
+#, php-format
+msgid "%s booking page"
+msgstr ""
+
+#. translators: %s: room name
+#: admin/class-admin.php:414
+msgid "unlisted"
+msgstr ""
+
+#: admin/class-admin.php:438
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: admin/views/letters.php:24
+msgid "These letters are no longer available. For security reasons, codes can only be printed within one hour after creating them. Please create new codes on the Flats screen."
+msgstr ""
+
+#: admin/views/letters.php:25
+#: admin/views/letters.php:35
+msgid "Back to the flats"
+msgstr ""
+
+#. translators: %d: number of letters
+#: admin/views/letters.php:30
+#, php-format
+msgid "%d letter is ready. Print it now and put it into the mailbox – the code can not be shown again later."
+msgid_plural "%d letters are ready. Print them now and put them into the mailboxes – the codes can not be shown again later."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/letters.php:34
+msgid "Print letters"
+msgstr ""
+
+#. translators: %s: room name
+#: admin/views/letters.php:53
+#, php-format
+msgid "Your access to the %s booking"
+msgstr ""
+
+#: admin/views/letters.php:56
+msgid "With this code, everyone in your flat can book online. Please keep this letter safe and do not share the code outside your flat."
+msgstr ""
+
+#: admin/views/letters.php:60
+msgid "Scan the QR code with your phone camera – or open this address and enter the code:"
+msgstr ""
+
+#: admin/views/letters.php:66
+msgid "Sign in once with the code – your phone or computer stays signed in."
+msgstr ""
+
+#: admin/views/letters.php:67
+msgid "Tap a free time to book. Choose \"private\" or open the session for neighbours."
+msgstr ""
+
+#: admin/views/letters.php:68
+msgid "Optional: add your email address to get reminders."
+msgstr ""
+
+#: admin/views/letters.php:70
+msgid "Privacy: bookings are anonymous. Other residents only see the kind of session and the number of people, never which flat booked."
+msgstr ""
+
+#: admin/views/ratings.php:28
+#: admin/views/schedule.php:39
+#: admin/views/series.php:105
+msgid "Period"
+msgstr ""
+
+#. translators: %d: number of days
+#: admin/views/ratings.php:34
+#, php-format
+msgid "last %d days"
+msgstr ""
+
+#: admin/views/ratings.php:62
+msgid "No ratings in this period yet."
+msgstr ""
+
+#: admin/views/ratings.php:67
+msgid "Date"
+msgstr ""
+
+#: admin/views/ratings.php:68
+#: admin/views/units.php:76
+#: includes/core/class-privacy.php:38
+msgid "Flat"
+msgstr ""
+
+#: admin/views/ratings.php:72
+msgid "Issues"
+msgstr ""
+
+#: admin/views/ratings.php:73
+msgid "Comment"
+msgstr ""
+
+#: admin/views/ratings.php:80
+msgid "anonymized"
+msgstr ""
+
+#: admin/views/ratings.php:90
+#: includes/core/class-shortcode.php:129
+msgid "Everything was fine"
+msgstr ""
+
+#. translators: %d: days
+#: admin/views/ratings.php:101
+#, php-format
+msgid "After %d days the link to the flat is removed (see Settings → Privacy); the answers stay for statistics."
+msgstr ""
+
+#: admin/views/schedule.php:31
+msgid "Earlier"
+msgstr ""
+
+#: admin/views/schedule.php:32
+#: includes/core/class-shortcode.php:75
+msgid "Today"
+msgstr ""
+
+#: admin/views/schedule.php:33
+msgid "Later"
+msgstr ""
+
+#: admin/views/schedule.php:38
+msgid "From"
+msgstr ""
+
+#. translators: %d: number of days
+#: admin/views/schedule.php:44
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/schedule.php:49
+msgid "Show"
+msgstr ""
+
+#: admin/views/schedule.php:54
+msgid "No opening hours in this period."
+msgstr ""
+
+#: admin/views/schedule.php:62
+#: admin/views/series.php:89
+msgid "Time"
+msgstr ""
+
+#: admin/views/schedule.php:63
+#: includes/core/class-privacy.php:46
+msgid "Booking"
+msgstr ""
+
+#: admin/views/schedule.php:64
+msgid "People (flat)"
+msgstr ""
+
+#: admin/views/schedule.php:65
+msgid "Waiting list"
+msgstr ""
+
+#: admin/views/schedule.php:66
+#: admin/views/series.php:132
+#: admin/views/units.php:80
+msgid "Actions"
+msgstr ""
+
+#: admin/views/schedule.php:93
+msgid "Recurring session"
+msgstr ""
+
+#. translators: %s: flat
+#: admin/views/schedule.php:98
+#, php-format
+msgid "Booked by %s"
+msgstr ""
+
+#: admin/views/schedule.php:103
+#: includes/core/class-shortcode.php:82
+#: includes/core/class-shortcode.php:85
+msgid "Free"
+msgstr ""
+
+#: admin/views/schedule.php:131
+msgid "Cancel this booking? People who joined and the waiting list will be notified."
+msgstr ""
+
+#: admin/views/schedule.php:131
+#: admin/views/series.php:118
+msgid "Cancel"
+msgstr ""
+
+#: admin/views/schedule.php:139
+msgid "Cancel the recurring session on this date? The slot becomes free for bookings."
+msgstr ""
+
+#: admin/views/schedule.php:139
+msgid "Skip this date"
+msgstr ""
+
+#. translators: %d: number of free slots
+#: admin/views/schedule.php:150
+#, php-format
+msgid "%d free slot"
+msgid_plural "%d free slots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/series.php:42
+msgid "Add recurring session"
+msgstr ""
+
+#: admin/views/series.php:46
+msgid "Predefined bookings that repeat every week, e.g. an open session for women on Tuesday evenings, or \"not available\" for the weekly cleaning. They do not count toward any flat's limit. Open sessions can be joined by residents."
+msgstr ""
+
+#: admin/views/series.php:54
+msgid "Title (optional)"
+msgstr ""
+
+#: admin/views/series.php:56
+msgid "Shown to residents, e.g. \"Ladies' evening\" or \"Cleaning\"."
+msgstr ""
+
+#: admin/views/series.php:59
+msgid "Kind of session"
+msgstr ""
+
+#: admin/views/series.php:68
+msgid "Options"
+msgstr ""
+
+#: admin/views/series.php:73
+msgid "Options that do not fit the chosen kind of session are ignored."
+msgstr ""
+
+#: admin/views/series.php:78
+msgid "Weekdays"
+msgstr ""
+
+#: admin/views/series.php:84
+msgid "Every"
+msgstr ""
+
+#: admin/views/series.php:84
+msgid "week(s)"
+msgstr ""
+
+#: admin/views/series.php:96
+msgid "for"
+msgstr ""
+
+#. translators: %d: slot length in minutes
+#: admin/views/series.php:99
+#, php-format
+msgid "slot(s) of %d minutes"
+msgstr ""
+
+#: admin/views/series.php:107
+#: admin/views/settings.php:129
+msgid "from"
+msgstr ""
+
+#: admin/views/series.php:108
+msgid "until (optional)"
+msgstr ""
+
+#: admin/views/series.php:112
+msgid "Active"
+msgstr ""
+
+#: admin/views/series.php:113
+msgid "Show this recurring session"
+msgstr ""
+
+#: admin/views/series.php:117
+#: includes/core/class-shortcode.php:71
+msgid "Save"
+msgstr ""
+
+#: admin/views/series.php:125
+msgid "No recurring sessions yet."
+msgstr ""
+
+#: admin/views/series.php:130
+msgid "Session"
+msgstr ""
+
+#: admin/views/series.php:131
+msgid "When"
+msgstr ""
+
+#: admin/views/series.php:147
+#: admin/views/units.php:89
+msgid "inactive"
+msgstr ""
+
+#: admin/views/series.php:152
+msgid "Edit"
+msgstr ""
+
+#: admin/views/series.php:156
+msgid "Delete this recurring session? Upcoming dates are removed; people who joined them are not notified automatically."
+msgstr ""
+
+#: admin/views/series.php:156
+#: admin/views/units.php:108
+msgid "Delete"
+msgstr ""
+
+#: admin/views/settings.php:43
+msgid "General"
+msgstr ""
+
+#: admin/views/settings.php:46
+msgid "Language"
+msgstr ""
+
+#. translators: %s: language name, e.g. "English"
+#: admin/views/settings.php:52
+#, php-format
+msgid "Same as WordPress (currently %s)"
+msgstr ""
+
+#: admin/views/settings.php:59
+msgid "Language of the booking page, the emails and these admin screens. Email texts you have not changed switch along."
+msgstr ""
+
+#: admin/views/settings.php:63
+msgid "Booking page"
+msgstr ""
+
+#: admin/views/settings.php:71
+msgid "— Select —"
+msgstr ""
+
+#. translators: %s: shortcode
+#: admin/views/settings.php:80
+#, php-format
+msgid "The page that contains the shortcode %s. Its address can be hard to guess, e.g. /sauna-k7q2/."
+msgstr ""
+
+#: admin/views/settings.php:83
+msgid "Keep the booking page unlisted (not in menus, site search, sitemap; noindex for search engines)"
+msgstr ""
+
+#: admin/views/settings.php:87
+msgid "Email sender"
+msgstr ""
+
+#: admin/views/settings.php:89
+msgid "Name"
+msgstr ""
+
+#: admin/views/settings.php:90
+msgid "Address"
+msgstr ""
+
+#: admin/views/settings.php:90
+msgid "Sender address"
+msgstr ""
+
+#: admin/views/settings.php:91
+msgid "Leave empty to use the WordPress defaults."
+msgstr ""
+
+#: admin/views/settings.php:95
+msgid "Feedback recipients"
+msgstr ""
+
+#: admin/views/settings.php:98
+msgid "Email addresses that receive ratings with problems or comments (one per line)."
+msgstr ""
+
+#: admin/views/settings.php:103
+msgid "Opening hours and slots"
+msgstr ""
+
+#: admin/views/settings.php:106
+msgid "Slot length"
+msgstr ""
+
+#. translators: %d: minutes
+#: admin/views/settings.php:113
+#, php-format
+msgid "%d minutes"
+msgstr ""
+
+#: admin/views/settings.php:118
+msgid "Existing bookings keep their length when you change this."
+msgstr ""
+
+#: admin/views/settings.php:122
+msgid "Bookable hours"
+msgstr ""
+
+#: admin/views/settings.php:131
+msgid "until"
+msgstr ""
+
+#: admin/views/settings.php:136
+msgid "E.g. 08:00 – 23:00 gives hourly slots from 8:00 to 23:00 (last slot 22:00–23:00). Use 24:00 for midnight. Leave a day empty to close it."
+msgstr ""
+
+#: admin/views/settings.php:140
+msgid "Closed dates"
+msgstr ""
+
+#: admin/views/settings.php:143
+msgid "One date per line (YYYY-MM-DD), e.g. for maintenance. For regular blocks use a recurring session \"Not available\"."
+msgstr ""
+
+#: admin/views/settings.php:148
+msgid "Fair-use rules"
+msgstr ""
+
+#: admin/views/settings.php:151
+msgid "Maximum people at once"
+msgstr ""
+
+#: admin/views/settings.php:155
+msgid "Book ahead"
+msgstr ""
+
+#: admin/views/settings.php:156
+#: admin/views/settings.php:205
+msgid "days"
+msgstr ""
+
+#: admin/views/settings.php:159
+msgid "Monthly limit per flat"
+msgstr ""
+
+#. translators: %s: names of booking kinds
+#: admin/views/settings.php:171
+#, php-format
+msgid "Counts these bookings: %s. Joining or opening a session for others does not count. 0 = no limit."
+msgstr ""
+
+#: admin/views/settings.php:177
+msgid "Slots in a row"
+msgstr ""
+
+#: admin/views/settings.php:180
+msgid "How many directly adjacent slots one flat may book or join. 0 = no limit."
+msgstr ""
+
+#: admin/views/settings.php:184
+msgid "Rating"
+msgstr ""
+
+#: admin/views/settings.php:185
+msgid "Ask for a rating of the last session before the next booking (one tap \"everything was fine\" is enough)"
+msgstr ""
+
+#: admin/views/settings.php:189
+msgid "Reminders and instructions"
+msgstr ""
+
+#: admin/views/settings.php:192
+msgid "Reminder"
+msgstr ""
+
+#: admin/views/settings.php:194
+msgid "hours before the session (0 = no reminder)"
+msgstr ""
+
+#: admin/views/settings.php:200
+msgid "Privacy"
+msgstr ""
+
+#: admin/views/settings.php:203
+msgid "Delete old bookings after"
+msgstr ""
+
+#: admin/views/settings.php:206
+msgid "Bookings and waiting lists are deleted after this time; ratings are kept without the flat."
+msgstr ""
+
+#: admin/views/settings.php:210
+msgid "Stay signed in for"
+msgstr ""
+
+#: admin/views/settings.php:211
+msgid "days (extended with every visit)"
+msgstr ""
+
+#: admin/views/settings.php:214
+msgid "Uninstall"
+msgstr ""
+
+#: admin/views/settings.php:215
+msgid "Delete all data when the plugin is deleted"
+msgstr ""
+
+#: admin/views/settings.php:219
+msgid "Email texts"
+msgstr ""
+
+#: admin/views/settings.php:220
+msgid "Placeholders:"
+msgstr ""
+
+#: admin/views/settings.php:229
+msgid "Subject"
+msgstr ""
+
+#: admin/views/settings.php:230
+msgid "Text"
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/views/settings.php:242
+#, php-format
+msgid "Background jobs (reminders, rating requests, cleanup) run every 15 minutes. Next run: %s."
+msgstr ""
+
+#: admin/views/settings.php:243
+msgid "Background jobs are not scheduled – deactivate and activate the plugin."
+msgstr ""
+
+#: admin/views/units.php:26
+msgid "Every flat gets a personal code on a printed letter for its mailbox. Whoever has the letter can sign in – so only people living here get access, without email addresses or passwords. Codes are stored encrypted (hashed): they can only be printed right after creating them. If a letter is lost, simply create a new code."
+msgstr ""
+
+#: admin/views/units.php:30
+#: admin/views/units.php:37
+msgid "Add flats"
+msgstr ""
+
+#: admin/views/units.php:33
+msgid "One flat per line: stair and door, separated by a semicolon, comma or slash. You can paste a column pair from a spreadsheet."
+msgstr ""
+
+#: admin/views/units.php:35
+msgid "Or upload a CSV file:"
+msgstr ""
+
+#: admin/views/units.php:36
+msgid "Create codes for the new flats and show the letters for printing"
+msgstr ""
+
+#. translators: %d: number of flats
+#: admin/views/units.php:49
+#, php-format
+msgid "%d active flat has no code yet."
+msgid_plural "%d active flats have no code yet."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/units.php:52
+msgid "Create codes for these flats and print letters"
+msgstr ""
+
+#: admin/views/units.php:57
+msgid "New codes for all flats, e.g. once a year. Old codes stop working."
+msgstr ""
+
+#: admin/views/units.php:58
+msgid "Also sign out all devices"
+msgstr ""
+
+#: admin/views/units.php:59
+msgid "Create new codes for ALL flats? Every flat will need a new letter."
+msgstr ""
+
+#: admin/views/units.php:59
+msgid "New codes for all flats"
+msgstr ""
+
+#. translators: %d: number of flats
+#: admin/views/units.php:67
+#, php-format
+msgid "All flats (%d)"
+msgstr ""
+
+#: admin/views/units.php:71
+msgid "No flats yet. Add them above."
+msgstr ""
+
+#: admin/views/units.php:77
+msgid "Code"
+msgstr ""
+
+#: admin/views/units.php:78
+msgid "Signed-in devices"
+msgstr ""
+
+#: admin/views/units.php:79
+msgid "With email reminders"
+msgstr ""
+
+#. translators: %s: date
+#: admin/views/units.php:96
+#, php-format
+msgid "created %s"
+msgstr ""
+
+#: admin/views/units.php:97
+msgid "no code yet"
+msgstr ""
+
+#: admin/views/units.php:105
+msgid "New code + letter"
+msgstr ""
+
+#: admin/views/units.php:105
+msgid "Create code + letter"
+msgstr ""
+
+#: admin/views/units.php:105
+msgid "Create a new code? The old letter stops working. Devices that are already signed in stay signed in."
+msgstr ""
+
+#: admin/views/units.php:106
+msgid "Sign out devices"
+msgstr ""
+
+#: admin/views/units.php:106
+msgid "Sign out all devices of this flat?"
+msgstr ""
+
+#: admin/views/units.php:107
+msgid "Deactivate"
+msgstr ""
+
+#: admin/views/units.php:107
+msgid "Activate"
+msgstr ""
+
+#: admin/views/units.php:107
+msgid "Deactivate this flat? It can no longer sign in or book."
+msgstr ""
+
+#: admin/views/units.php:108
+msgid "Delete this flat? Its devices are signed out; past bookings stay anonymous."
+msgstr ""
+
+#: includes/core/auth/class-unit-code-provider.php:21
+msgid "Please enter the 8-character code from your letter."
+msgstr ""
+
+#: includes/core/auth/class-unit-code-provider.php:25
+msgid "This code is not valid. Please check it, or ask the administrators for a new letter."
+msgstr ""
+
+#: includes/core/class-booking-service.php:70
+#: includes/core/class-booking-service.php:166
+msgid "This time slot is free – you can book it."
+msgstr ""
+
+#: includes/core/class-booking-service.php:97
+#: includes/core/class-booking-service.php:131
+msgid "This booking was not found. Maybe it was already cancelled."
+msgstr ""
+
+#: includes/core/class-booking-service.php:100
+#: includes/core/class-booking-service.php:134
+msgid "This session has already started."
+msgstr ""
+
+#: includes/core/class-booking-service.php:147
+msgid "Your flat is not part of this session."
+msgstr ""
+
+#: includes/core/class-booking-service.php:162
+#: includes/core/class-rules.php:60
+msgid "This time slot does not exist."
+msgstr ""
+
+#: includes/core/class-booking-service.php:169
+msgid "This time slot is not available."
+msgstr ""
+
+#: includes/core/class-booking-service.php:226
+msgid "The server is busy. Please try again."
+msgstr ""
+
+#: includes/core/class-booking-service.php:236
+msgid "Your booking could not be saved. Please try again."
+msgstr ""
+
+#. translators: PHP date format for dates, see https://www.php.net/manual/datetime.format.php
+#: includes/core/class-i18n.php:145
+msgctxt "date format"
+msgid "F j, Y"
+msgstr ""
+
+#. translators: PHP date format for dates with weekday, see https://www.php.net/manual/datetime.format.php
+#: includes/core/class-i18n.php:150
+msgctxt "long date format"
+msgid "l, F j, Y"
+msgstr ""
+
+#. translators: PHP time format, see https://www.php.net/manual/datetime.format.php
+#: includes/core/class-i18n.php:155
+msgctxt "time format"
+msgid "g:i a"
+msgstr ""
+
+#: includes/core/class-i18n.php:186
+msgid "Sunday"
+msgstr ""
+
+#: includes/core/class-i18n.php:187
+msgid "Monday"
+msgstr ""
+
+#: includes/core/class-i18n.php:188
+msgid "Tuesday"
+msgstr ""
+
+#: includes/core/class-i18n.php:189
+msgid "Wednesday"
+msgstr ""
+
+#: includes/core/class-i18n.php:190
+msgid "Thursday"
+msgstr ""
+
+#: includes/core/class-i18n.php:191
+msgid "Friday"
+msgstr ""
+
+#: includes/core/class-i18n.php:192
+msgid "Saturday"
+msgstr ""
+
+#: includes/core/class-i18n.php:195
+msgctxt "weekday abbreviation"
+msgid "Sun"
+msgstr ""
+
+#: includes/core/class-i18n.php:196
+msgctxt "weekday abbreviation"
+msgid "Mon"
+msgstr ""
+
+#: includes/core/class-i18n.php:197
+msgctxt "weekday abbreviation"
+msgid "Tue"
+msgstr ""
+
+#: includes/core/class-i18n.php:198
+msgctxt "weekday abbreviation"
+msgid "Wed"
+msgstr ""
+
+#: includes/core/class-i18n.php:199
+msgctxt "weekday abbreviation"
+msgid "Thu"
+msgstr ""
+
+#: includes/core/class-i18n.php:200
+msgctxt "weekday abbreviation"
+msgid "Fri"
+msgstr ""
+
+#: includes/core/class-i18n.php:201
+msgctxt "weekday abbreviation"
+msgid "Sat"
+msgstr ""
+
+#: includes/core/class-i18n.php:209
+msgid "January"
+msgstr ""
+
+#: includes/core/class-i18n.php:210
+msgid "February"
+msgstr ""
+
+#: includes/core/class-i18n.php:211
+msgid "March"
+msgstr ""
+
+#: includes/core/class-i18n.php:212
+msgid "April"
+msgstr ""
+
+#: includes/core/class-i18n.php:213
+msgid "May"
+msgstr ""
+
+#: includes/core/class-i18n.php:214
+msgid "June"
+msgstr ""
+
+#: includes/core/class-i18n.php:215
+msgid "July"
+msgstr ""
+
+#: includes/core/class-i18n.php:216
+msgid "August"
+msgstr ""
+
+#: includes/core/class-i18n.php:217
+msgid "September"
+msgstr ""
+
+#: includes/core/class-i18n.php:218
+msgid "October"
+msgstr ""
+
+#: includes/core/class-i18n.php:219
+msgid "November"
+msgstr ""
+
+#: includes/core/class-i18n.php:220
+msgid "December"
+msgstr ""
+
+#: includes/core/class-i18n.php:223
+msgctxt "month abbreviation"
+msgid "Jan"
+msgstr ""
+
+#: includes/core/class-i18n.php:224
+msgctxt "month abbreviation"
+msgid "Feb"
+msgstr ""
+
+#: includes/core/class-i18n.php:225
+msgctxt "month abbreviation"
+msgid "Mar"
+msgstr ""
+
+#: includes/core/class-i18n.php:226
+msgctxt "month abbreviation"
+msgid "Apr"
+msgstr ""
+
+#: includes/core/class-i18n.php:227
+msgctxt "month abbreviation"
+msgid "May"
+msgstr ""
+
+#: includes/core/class-i18n.php:228
+msgctxt "month abbreviation"
+msgid "Jun"
+msgstr ""
+
+#: includes/core/class-i18n.php:229
+msgctxt "month abbreviation"
+msgid "Jul"
+msgstr ""
+
+#: includes/core/class-i18n.php:230
+msgctxt "month abbreviation"
+msgid "Aug"
+msgstr ""
+
+#: includes/core/class-i18n.php:231
+msgctxt "month abbreviation"
+msgid "Sep"
+msgstr ""
+
+#: includes/core/class-i18n.php:232
+msgctxt "month abbreviation"
+msgid "Oct"
+msgstr ""
+
+#: includes/core/class-i18n.php:233
+msgctxt "month abbreviation"
+msgid "Nov"
+msgstr ""
+
+#: includes/core/class-i18n.php:234
+msgctxt "month abbreviation"
+msgid "Dec"
+msgstr ""
+
+#: includes/core/class-link-handler.php:25
+#: includes/core/class-mailer.php:64
+msgid "Confirm email address"
+msgstr ""
+
+#: includes/core/class-link-handler.php:26
+msgid "To the booking page"
+msgstr ""
+
+#: includes/core/class-link-handler.php:29
+msgid "This link is no longer valid. Maybe the address was already confirmed or changed."
+msgstr ""
+
+#: includes/core/class-link-handler.php:35
+msgid "Email address confirmed"
+msgstr ""
+
+#. translators: %s: email address
+#: includes/core/class-link-handler.php:38
+#, php-format
+msgid "Thank you! From now on, booking mails go to %s."
+msgstr ""
+
+#: includes/core/class-link-handler.php:44
+msgid "Yes, confirm this address"
+msgstr ""
+
+#. translators: %s: email address
+#: includes/core/class-link-handler.php:49
+#, php-format
+msgid "Send booking confirmations and reminders to %s?"
+msgstr ""
+
+#: includes/core/class-mailer.php:14
+msgid "{room}: booked for {date}, {time}"
+msgstr ""
+
+#: includes/core/class-mailer.php:15
+msgid ""
+"Hello,\n"
+"\n"
+"you are booked:\n"
+"\n"
+"{date}\n"
+"{time}\n"
+"{details}\n"
+"\n"
+"Can't make it? Please cancel on the booking page so others can use the slot:\n"
+"{page_url}"
+msgstr ""
+
+#: includes/core/class-mailer.php:19
+msgid "Reminder – {room} on {date}, {time}"
+msgstr ""
+
+#: includes/core/class-mailer.php:20
+msgid ""
+"Hello,\n"
+"\n"
+"a friendly reminder of your booking:\n"
+"\n"
+"{date}\n"
+"{time}\n"
+"{details}\n"
+"\n"
+"{instructions}\n"
+"\n"
+"Booking page: {page_url}"
+msgstr ""
+
+#: includes/core/class-mailer.php:24
+msgid "Cancelled – {room} on {date}, {time}"
+msgstr ""
+
+#: includes/core/class-mailer.php:25
+msgid ""
+"Hello,\n"
+"\n"
+"the session on {date}, {time} has been cancelled. Your place in it has been removed – there is nothing you need to do.\n"
+"\n"
+"Booking page: {page_url}"
+msgstr ""
+
+#: includes/core/class-mailer.php:29
+msgid "A place is free – {room} on {date}, {time}"
+msgstr ""
+
+#: includes/core/class-mailer.php:30
+msgid ""
+"Hello,\n"
+"\n"
+"good news: the slot you were waiting for ({date}, {time}) has become available.\n"
+"Everyone on the waiting list gets this message – whoever books first gets it.\n"
+"\n"
+"Book now: {page_url}"
+msgstr ""
+
+#: includes/core/class-mailer.php:34
+msgid "How was it? – {room} on {date}"
+msgstr ""
+
+#: includes/core/class-mailer.php:35
+msgid ""
+"Hello,\n"
+"\n"
+"how was your session on {date}, {time}? Rating takes about ten seconds and helps everyone:\n"
+"{rate_url}"
+msgstr ""
+
+#: includes/core/class-mailer.php:39
+msgid "Please confirm your email address"
+msgstr ""
+
+#: includes/core/class-mailer.php:40
+msgid ""
+"Hello,\n"
+"\n"
+"please confirm that you want booking confirmations and reminders for the {room} at this address:\n"
+"{confirm_url}\n"
+"\n"
+"If you did not ask for this, just ignore this message."
+msgstr ""
+
+#: includes/core/class-mailer.php:44
+msgid "{room}: feedback for {date}, {time}"
+msgstr ""
+
+#: includes/core/class-mailer.php:45
+msgid ""
+"Hello,\n"
+"\n"
+"feedback for the session on {date}, {time} (flat {unit}):\n"
+"\n"
+"{answers}\n"
+"\n"
+"Comment: {comment}\n"
+"\n"
+"All ratings: {admin_url}"
+msgstr ""
+
+#: includes/core/class-mailer.php:59
+msgid "Booking confirmation"
+msgstr ""
+
+#: includes/core/class-mailer.php:60
+msgid "Reminder before the session"
+msgstr ""
+
+#: includes/core/class-mailer.php:61
+msgid "Session cancelled (to people who joined)"
+msgstr ""
+
+#: includes/core/class-mailer.php:62
+msgid "Waiting list: a place is free"
+msgstr ""
+
+#: includes/core/class-mailer.php:63
+msgid "Rating request after the session"
+msgstr ""
+
+#: includes/core/class-mailer.php:65
+msgid "Feedback with issues (to the administrators)"
+msgstr ""
+
+#: includes/core/class-mailer.php:72
+msgid "Name of the room"
+msgstr ""
+
+#: includes/core/class-mailer.php:73
+msgid "Date with weekday"
+msgstr ""
+
+#: includes/core/class-mailer.php:74
+msgid "Time range"
+msgstr ""
+
+#: includes/core/class-mailer.php:75
+msgid "Kind of booking and number of people"
+msgstr ""
+
+#: includes/core/class-mailer.php:76
+msgid "Reminder only: what to do when leaving (depends on the next booking)"
+msgstr ""
+
+#: includes/core/class-mailer.php:77
+msgid "Link to the booking page"
+msgstr ""
+
+#: includes/core/class-mailer.php:78
+msgid "Rating request only: personal rating link"
+msgstr ""
+
+#: includes/core/class-mailer.php:79
+msgid "Email confirmation only: confirmation link"
+msgstr ""
+
+#: includes/core/class-mailer.php:80
+msgid "Site title"
+msgstr ""
+
+#: includes/core/class-mailer.php:81
+msgid "Feedback mail only: the flat"
+msgstr ""
+
+#: includes/core/class-mailer.php:82
+msgid "Feedback mail only: the answers"
+msgstr ""
+
+#: includes/core/class-mailer.php:83
+msgid "Feedback mail only: the comment"
+msgstr ""
+
+#: includes/core/class-mailer.php:84
+msgid "Feedback mail only: link to the ratings screen"
+msgstr ""
+
+#: includes/core/class-privacy.php:39
+msgid "Email"
+msgstr ""
+
+#: includes/core/class-privacy.php:40
+msgid "Signed in since (UTC)"
+msgstr ""
+
+#: includes/core/class-privacy.php:47
+msgid "cancelled"
+msgstr ""
+
+#: includes/core/class-ratings.php:30
+msgid "This session can not be rated (yet)."
+msgstr ""
+
+#: includes/core/class-ratings.php:39
+msgid "Your flat was not part of this session."
+msgstr ""
+
+#: includes/core/class-ratings.php:65
+msgid "Please tap at least one answer, or \"Everything was fine\"."
+msgstr ""
+
+#: includes/core/class-ratings.php:81
+#: includes/core/class-sessions.php:46
+#: includes/core/class-shortcode.php:51
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:129
+#: includes/core/class-rest-controller.php:279
+msgid "Please sign in again."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:149
+#: includes/core/class-rest-controller.php:251
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:200
+msgid "Booked! Enjoy your session."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:206
+msgid "You have joined the session."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:211
+msgid "Your booking has been cancelled."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:216
+msgid "You have left the session."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:222
+msgid "You are on the waiting list. We will email you if a place becomes free."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:223
+msgid "You are on the waiting list. Add your email address to be notified when a place becomes free."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:229
+msgid "You have left the waiting list."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:245
+msgid "Your email address has been removed."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:248
+msgid "Please enter a valid email address."
+msgstr ""
+
+#. translators: %s: email address
+#: includes/core/class-rest-controller.php:259
+#, php-format
+msgid "Almost done: please click the link we just sent to %s."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:282
+msgid "This session was not found."
+msgstr ""
+
+#: includes/core/class-rest-controller.php:312
+msgid "Thank you for your feedback!"
+msgstr ""
+
+#: includes/core/class-room.php:52
+#: includes/core/class-room.php:53
+msgid "Not available"
+msgstr ""
+
+#: includes/core/class-room.php:54
+msgid "Blocked by the administrators."
+msgstr ""
+
+#: includes/core/class-rules.php:63
+msgid "This time slot has already started."
+msgstr ""
+
+#. translators: %d: number of days
+#: includes/core/class-rules.php:67
+#, php-format
+msgid "You can book up to %d days in advance."
+msgstr ""
+
+#: includes/core/class-rules.php:79
+msgid "Sorry, someone else just booked this time slot."
+msgstr ""
+
+#: includes/core/class-rules.php:82
+msgid "Please choose how you want to book."
+msgstr ""
+
+#: includes/core/class-rules.php:87
+msgid "This session is private. You can join the waiting list instead."
+msgstr ""
+
+#: includes/core/class-rules.php:101
+msgid "Please tell us how many people you will be."
+msgstr ""
+
+#. translators: %s: allowed people categories, e.g. "Women"
+#: includes/core/class-rules.php:113
+#, php-format
+msgid "This session is only for: %s."
+msgstr ""
+
+#: includes/core/class-rules.php:126
+msgid "Sorry, this session is full. You can join the waiting list."
+msgstr ""
+
+#. translators: %d: free places
+#: includes/core/class-rules.php:129
+#, php-format
+msgid "Only %d place is left."
+msgid_plural "Only %d places are left."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/core/class-rules.php:143
+#: includes/core/class-rules.php:147
+msgid "Your flat is already part of this session."
+msgstr ""
+
+#. translators: 1: limit, 2: mode name, 3: month name
+#: includes/core/class-rules.php:166
+#, php-format
+msgid "Your flat has already used its %1$d booking \"%2$s\" in %3$s. Open sessions are still possible."
+msgid_plural "Your flat has already used its %1$d bookings \"%2$s\" in %3$s. Open sessions are still possible."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: maximum number of slots in a row
+#: includes/core/class-rules.php:190
+#, php-format
+msgid "To keep it fair, a flat can book at most %d slot in a row."
+msgid_plural "To keep it fair, a flat can book at most %d slots in a row."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/core/class-rules.php:206
+msgid "Please quickly rate your last session first."
+msgstr ""
+
+#: includes/core/class-shortcode.php:20
+msgid "Loading…"
+msgstr ""
+
+#: includes/core/class-shortcode.php:21
+msgid "Please enable JavaScript to use the booking page."
+msgstr ""
+
+#: includes/core/class-shortcode.php:50
+msgid "The booking page could not be loaded. Please try again later."
+msgstr ""
+
+#: includes/core/class-shortcode.php:52
+#: includes/core/class-shortcode.php:55
+msgid "Sign in"
+msgstr ""
+
+#: includes/core/class-shortcode.php:53
+msgid "Your flat has received a letter with a personal code. Enter it once – this device will then stay signed in."
+msgstr ""
+
+#: includes/core/class-shortcode.php:54
+msgid "Code from your letter"
+msgstr ""
+
+#: includes/core/class-shortcode.php:56
+msgid "Signing in…"
+msgstr ""
+
+#: includes/core/class-shortcode.php:57
+msgid "Welcome! You are signed in."
+msgstr ""
+
+#: includes/core/class-shortcode.php:58
+msgid "Lost your letter? Please ask the administrators for a new code."
+msgstr ""
+
+#: includes/core/class-shortcode.php:59
+msgid "Bookings are anonymous: others only see the kind of session and the number of people – never which flat booked."
+msgstr ""
+
+#: includes/core/class-shortcode.php:60
+msgid "Sign out"
+msgstr ""
+
+#: includes/core/class-shortcode.php:61
+msgid "Sign out on this device? You will need the code from your letter to sign in again."
+msgstr ""
+
+#: includes/core/class-shortcode.php:62
+#: includes/core/class-shortcode.php:63
+msgid "Email reminders"
+msgstr ""
+
+#: includes/core/class-shortcode.php:64
+msgid "Optional: get a confirmation, a reminder before your session (with what to do when you leave), news from the waiting list and a short rating request."
+msgstr ""
+
+#. translators: %s: email address
+#: includes/core/class-shortcode.php:66
+#, php-format
+msgid "Mails go to %s."
+msgstr ""
+
+#: includes/core/class-shortcode.php:67
+msgid "No email address yet – you will only see everything here on the page."
+msgstr ""
+
+#. translators: %s: email address
+#: includes/core/class-shortcode.php:69
+#, php-format
+msgid "Waiting for confirmation of %s – please click the link in the email."
+msgstr ""
+
+#: includes/core/class-shortcode.php:70
+msgid "Your email address"
+msgstr ""
+
+#: includes/core/class-shortcode.php:72
+msgid "Remove my email address"
+msgstr ""
+
+#: includes/core/class-shortcode.php:73
+msgid "Your address is only used for these mails and is never shown to anyone."
+msgstr ""
+
+#: includes/core/class-shortcode.php:74
+msgid "Close"
+msgstr ""
+
+#: includes/core/class-shortcode.php:76
+msgid "Tomorrow"
+msgstr ""
+
+#: includes/core/class-shortcode.php:77
+msgid "My bookings"
+msgstr ""
+
+#: includes/core/class-shortcode.php:78
+msgid "You have no bookings yet. Tap a free time below to book."
+msgstr ""
+
+#: includes/core/class-shortcode.php:79
+msgid "Book a time"
+msgstr ""
+
+#: includes/core/class-shortcode.php:80
+msgid "There are no bookable times in the coming days."
+msgstr ""
+
+#: includes/core/class-shortcode.php:81
+msgid "Legend"
+msgstr ""
+
+#: includes/core/class-shortcode.php:83
+msgid "Open – you can join"
+msgstr ""
+
+#: includes/core/class-shortcode.php:84
+msgid "Taken"
+msgstr ""
+
+#: includes/core/class-shortcode.php:86
+msgid "full"
+msgstr ""
+
+#: includes/core/class-shortcode.php:87
+msgid "This time is not available."
+msgstr ""
+
+#: includes/core/class-shortcode.php:88
+msgid "This time can not be booked yet."
+msgstr ""
+
+#: includes/core/class-shortcode.php:89
+msgid "In progress"
+msgstr ""
+
+#: includes/core/class-shortcode.php:90
+msgid "Yours"
+msgstr ""
+
+#: includes/core/class-shortcode.php:91
+msgid "Joined"
+msgstr ""
+
+#: includes/core/class-shortcode.php:92
+msgid "Waiting"
+msgstr ""
+
+#: includes/core/class-shortcode.php:93
+msgid "You are on the waiting list."
+msgstr ""
+
+#: includes/core/class-shortcode.php:94
+msgid "Good news: this time is free now – book it before someone else does!"
+msgstr ""
+
+#: includes/core/class-shortcode.php:95
+#: includes/core/class-shortcode.php:105
+#: includes/core/class-shortcode.php:114
+msgid "Book"
+msgstr ""
+
+#: includes/core/class-shortcode.php:96
+#: includes/core/class-shortcode.php:115
+msgid "Join"
+msgstr ""
+
+#: includes/core/class-shortcode.php:97
+msgid "Wait"
+msgstr ""
+
+#. translators: 1: people, 2: capacity
+#: includes/core/class-shortcode.php:99
+#, php-format
+msgid "%1$s of %2$s places"
+msgstr ""
+
+#. translators: %s: free places
+#: includes/core/class-shortcode.php:101
+#, php-format
+msgid "Places left: %s"
+msgstr ""
+
+#: includes/core/class-shortcode.php:102
+msgid "1 waiting"
+msgstr ""
+
+#. translators: %s: number of people on the waiting list
+#: includes/core/class-shortcode.php:104
+#, php-format
+msgid "%s waiting"
+msgstr ""
+
+#: includes/core/class-shortcode.php:106
+msgid "How do you want to book?"
+msgstr ""
+
+#: includes/core/class-shortcode.php:107
+msgid "How many of you?"
+msgstr ""
+
+#: includes/core/class-shortcode.php:108
+msgid "How many of you? (optional)"
+msgstr ""
+
+#. translators: %s: people category, e.g. "Women"
+#: includes/core/class-shortcode.php:110
+#, php-format
+msgid "One less: %s"
+msgstr ""
+
+#. translators: %s: people category, e.g. "Women"
+#: includes/core/class-shortcode.php:112
+#, php-format
+msgid "One more: %s"
+msgstr ""
+
+#: includes/core/class-shortcode.php:113
+msgid "Book now"
+msgstr ""
+
+#: includes/core/class-shortcode.php:116
+msgid "Join this session"
+msgstr ""
+
+#: includes/core/class-shortcode.php:117
+msgid "Join now"
+msgstr ""
+
+#: includes/core/class-shortcode.php:118
+msgid "or"
+msgstr ""
+
+#: includes/core/class-shortcode.php:119
+msgid "Join the waiting list"
+msgstr ""
+
+#: includes/core/class-shortcode.php:120
+msgid "Leave the waiting list"
+msgstr ""
+
+#: includes/core/class-shortcode.php:121
+msgid "Cancel booking"
+msgstr ""
+
+#: includes/core/class-shortcode.php:122
+msgid "Really cancel this booking?"
+msgstr ""
+
+#: includes/core/class-shortcode.php:123
+msgid "Leave session"
+msgstr ""
+
+#: includes/core/class-shortcode.php:124
+msgid "Really leave this session?"
+msgstr ""
+
+#: includes/core/class-shortcode.php:125
+msgid "One moment…"
+msgstr ""
+
+#: includes/core/class-shortcode.php:126
+msgid "How was it?"
+msgstr ""
+
+#: includes/core/class-shortcode.php:127
+msgid "How was your last session?"
+msgstr ""
+
+#: includes/core/class-shortcode.php:128
+msgid "Rate now (10 seconds)"
+msgstr ""
+
+#: includes/core/class-shortcode.php:130
+msgid "or tell us more:"
+msgstr ""
+
+#: includes/core/class-shortcode.php:131
+msgid "bad"
+msgstr ""
+
+#: includes/core/class-shortcode.php:132
+msgid "okay"
+msgstr ""
+
+#: includes/core/class-shortcode.php:133
+msgid "good"
+msgstr ""
+
+#: includes/core/class-shortcode.php:134
+msgid "Anything wrong?"
+msgstr ""
+
+#: includes/core/class-shortcode.php:135
+msgid "Comment (optional)"
+msgstr ""
+
+#: includes/core/class-shortcode.php:136
+msgid "Send"
+msgstr ""
+
+#: includes/core/class-shortcode.php:137
+msgid "Thank you!"
+msgstr ""
+
+#: includes/core/class-shortcode.php:138
+msgid "Your feedback has been saved."
+msgstr ""
+
+#: includes/core/class-shortcode.php:139
+msgid "This session has already been rated by your flat. Thank you!"
+msgstr ""
+
+#. translators: %s: names of the modes that count toward the monthly limit
+#: includes/core/class-shortcode.php:141
+#, php-format
+msgid "Your flat's bookings (%s):"
+msgstr ""
+
+#. translators: 1: month, 2: used, 3: limit
+#: includes/core/class-shortcode.php:143
+#, php-format
+msgid "%1$s %2$s of %3$s"
+msgstr ""
+
+#. translators: 1: limit per month, 2: mode names
+#: includes/core/class-shortcode.php:145
+#, php-format
+msgid "Max. %1$s bookings \"%2$s\" per flat and month"
+msgstr ""
+
+#. translators: %s: slots in a row
+#: includes/core/class-shortcode.php:147
+#, php-format
+msgid "max. %s slots in a row"
+msgstr ""
+
+#. translators: %s: days
+#: includes/core/class-shortcode.php:149
+#, php-format
+msgid "bookable %s days ahead"
+msgstr ""
+
+#. translators: %s: people
+#: includes/core/class-shortcode.php:151
+#, php-format
+msgid "up to %s people"
+msgstr ""
+
+#. translators: 1: stair, 2: door
+#: includes/core/class-units.php:23
+#, php-format
+msgid "Stair %1$s · Door %2$s"
+msgstr ""
+
+#: includes/sauna/class-profile.php:27
+msgid "Sauna"
+msgstr ""
+
+#: includes/sauna/class-profile.php:33
+#: includes/sauna/class-profile.php:34
+msgid "Private"
+msgstr ""
+
+#: includes/sauna/class-profile.php:35
+msgid "Only the flat that booked. Others can join the waiting list."
+msgstr ""
+
+#: includes/sauna/class-profile.php:42
+msgid "Open for everyone"
+msgstr ""
+
+#: includes/sauna/class-profile.php:43
+msgid "Open · everyone"
+msgstr ""
+
+#: includes/sauna/class-profile.php:44
+msgid "Neighbours can join you."
+msgstr ""
+
+#: includes/sauna/class-profile.php:50
+msgid "Open for women"
+msgstr ""
+
+#: includes/sauna/class-profile.php:51
+msgid "Open · women"
+msgstr ""
+
+#: includes/sauna/class-profile.php:52
+msgid "Only women can join."
+msgstr ""
+
+#: includes/sauna/class-profile.php:59
+msgid "Open for men"
+msgstr ""
+
+#: includes/sauna/class-profile.php:60
+msgid "Open · men"
+msgstr ""
+
+#: includes/sauna/class-profile.php:61
+msgid "Only men can join."
+msgstr ""
+
+#: includes/sauna/class-profile.php:72
+msgid "Women"
+msgstr ""
+
+#: includes/sauna/class-profile.php:73
+msgid "Men"
+msgstr ""
+
+#: includes/sauna/class-profile.php:74
+msgid "Diverse"
+msgstr ""
+
+#: includes/sauna/class-profile.php:81
+msgid "Aufguss"
+msgstr ""
+
+#: includes/sauna/class-profile.php:82
+msgid "There will be an Aufguss (water with essential oils on the stones)."
+msgstr ""
+
+#: includes/sauna/class-profile.php:87
+msgid "Keep warm"
+msgstr ""
+
+#: includes/sauna/class-profile.php:88
+msgid "Asks the people before you to leave the sauna on, so it is hot when you arrive."
+msgstr ""
+
+#: includes/sauna/class-profile.php:98
+msgid "Was it clean?"
+msgstr ""
+
+#: includes/sauna/class-profile.php:99
+msgid "Was it warm and ready?"
+msgstr ""
+
+#: includes/sauna/class-profile.php:102
+msgid "Dirty"
+msgstr ""
+
+#: includes/sauna/class-profile.php:103
+msgid "Not heated"
+msgstr ""
+
+#: includes/sauna/class-profile.php:104
+msgid "Something broken"
+msgstr ""
+
+#: includes/sauna/class-profile.php:105
+msgid "Things left behind"
+msgstr ""
+
+#: includes/sauna/class-profile.php:106
+msgid "Previous people stayed too long"
+msgstr ""
+
+#: includes/sauna/class-profile.php:107
+msgid "Other problem"
+msgstr ""
+
+#: includes/sauna/class-profile.php:135
+msgid "When you leave: switch off the oven, leave the door and the vent open so the sauna can dry, wipe the benches and take your towels and rubbish with you."
+msgstr ""
+
+#: includes/sauna/class-profile.php:139
+msgid "The people after you asked to keep the sauna warm: please leave the oven on and close the door. Still wipe the benches and take your towels and rubbish with you."
+msgstr ""
+
+#: includes/sauna/class-profile.php:143
+msgid "Your flat also has the next slot – leave the oven on."
+msgstr ""
+
+#: includes/sauna/class-profile.php:184
+msgid "You asked the people before you to keep the sauna warm."
+msgstr ""
+
+#: includes/sauna/class-profile.php:214
+msgid "When leaving (cooldown)"
+msgstr ""
+
+#: includes/sauna/class-profile.php:214
+msgid "Shown in reminders and with the own booking, unless the next people asked to keep it warm."
+msgstr ""
+
+#: includes/sauna/class-profile.php:215
+msgid "When leaving (keep warm)"
+msgstr ""
+
+#: includes/sauna/class-profile.php:215
+msgid "Used instead when the next booking asks to keep the sauna warm."
+msgstr ""
+
+#: includes/sauna/class-profile.php:226
+msgid "Leave empty to use the text shown in grey."
+msgstr ""
+
+#: includes/sauna/class-profile.php:233
+msgid "🔥 Sauna reminder: {date}, {time}"
+msgstr ""
