@@ -18,6 +18,12 @@ define( 'SAUNAPLAN_FILE', __FILE__ );
 define( 'SAUNAPLAN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SAUNAPLAN_URL', plugin_dir_url( __FILE__ ) );
 
+/** Version for an asset URL: changes whenever the file changes, so browsers never keep a stale copy. */
+function saunaplan_asset_version( string $path ): string {
+	$mtime = @filemtime( SAUNAPLAN_DIR . $path ); // phpcs:ignore WordPress.PHP.NoSilencedErrors
+	return SAUNAPLAN_VERSION . ( $mtime ? '.' . $mtime : '' );
+}
+
 // Generic booking core: knows nothing about saunas (see tests/architecture-test.php).
 foreach ( array(
 	'interface-room-profile',

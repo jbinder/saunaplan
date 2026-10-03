@@ -20,7 +20,7 @@ class Profile implements Room_Profile {
 	}
 
 	public function enqueue() {
-		wp_enqueue_style( 'saunaplan-sauna', SAUNAPLAN_URL . 'assets/css/sauna.css', array( 'saunaplan' ), SAUNAPLAN_VERSION );
+		wp_enqueue_style( 'saunaplan-sauna', SAUNAPLAN_URL . 'assets/css/sauna.css', array( 'saunaplan' ), \saunaplan_asset_version( 'assets/css/sauna.css' ) );
 	}
 
 	public function label(): string {

@@ -63,8 +63,8 @@ class Admin {
 			wp_register_script( 'saunaplan-qrcode', SAUNAPLAN_URL . 'assets/vendor/qrcode.min.js', array(), '1.4.4', true );
 			$deps[] = 'saunaplan-qrcode';
 		}
-		wp_enqueue_style( 'saunaplan-admin', SAUNAPLAN_URL . 'assets/css/admin.css', array(), SAUNAPLAN_VERSION );
-		wp_enqueue_script( 'saunaplan-admin', SAUNAPLAN_URL . 'assets/js/admin.js', $deps, SAUNAPLAN_VERSION, true );
+		wp_enqueue_style( 'saunaplan-admin', SAUNAPLAN_URL . 'assets/css/admin.css', array(), \saunaplan_asset_version( 'assets/css/admin.css' ) );
+		wp_enqueue_script( 'saunaplan-admin', SAUNAPLAN_URL . 'assets/js/admin.js', $deps, \saunaplan_asset_version( 'assets/js/admin.js' ), true );
 	}
 
 	/* ----------------------------------------------------------------- Pages */

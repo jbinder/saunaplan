@@ -9,6 +9,7 @@ The plugin lives in [`saunaplan/`](saunaplan/).
 - **Booking modes:** *Private* (only the booking flat; others can join the waiting list), *Open for everyone*, *Open for women*, *Open for men*. For open sessions the number of people is required (♀ / ♂ / ⚧). Others can join until the capacity is reached, but only in the categories the mode allows.
 - **Aufguss** (open sessions) and **Keep warm**: the people in the slot *before* see in their reminder and on their booking that they should leave the oven on. Otherwise they get the cooldown instructions. If a flat also has the next slot, it is told to leave the oven on.
 - **Waiting list** for private or full sessions. When a place becomes free, everyone on the list gets an email at once, and whoever books first gets the place.
+- **Week calendar** as the default view (Mon–Sun columns, one row per slot, ‹ › to change week). A *List* view is one tap away, and each device remembers the choice.
 - **What others see:** mode, number of people per category, waiting list length, badges. They never see which flat booked or any names.
 - **Fair-use rules:** max. private bookings per flat and month (default 4; open sessions don't count), max. slots in a row per flat (default 2), booking horizon (default 14 days), capacity (default 6).
 - **Rating in ~10 seconds:** one tap *Everything was fine*, or smileys for "clean?" and "warm and ready?", issue chips and a comment. It is requested by email after the session and required before the next booking. Ratings with issues or comments are emailed to the feedback recipients.

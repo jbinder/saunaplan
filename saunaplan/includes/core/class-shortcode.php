@@ -29,8 +29,8 @@ class Shortcode {
 		}
 		$done = true;
 
-		wp_enqueue_style( 'saunaplan', SAUNAPLAN_URL . 'assets/css/core.css', array(), SAUNAPLAN_VERSION );
-		wp_enqueue_script( 'saunaplan', SAUNAPLAN_URL . 'assets/js/core-app.js', array(), SAUNAPLAN_VERSION, true );
+		wp_enqueue_style( 'saunaplan', SAUNAPLAN_URL . 'assets/css/core.css', array(), \saunaplan_asset_version( 'assets/css/core.css' ) );
+		wp_enqueue_script( 'saunaplan', SAUNAPLAN_URL . 'assets/js/core-app.js', array(), \saunaplan_asset_version( 'assets/js/core-app.js' ), true );
 		// Room profiles add their look here.
 		do_action( 'saunaplan_enqueue' );
 
@@ -40,6 +40,13 @@ class Shortcode {
 			'locale'   => I18n::js_locale(),
 			'today'    => $today,
 			'tomorrow' => Time::add_days( $today, 1 ),
+			'weekdays' => array_values( Time::weekday_names( true ) ),
+			'months'   => array_map(
+				static function ( $m ) {
+					return I18n::month( $m, true );
+				},
+				range( 1, 12 )
+			),
 			'i18n'     => self::strings(),
 		);
 		wp_add_inline_script( 'saunaplan', 'window.Saunaplan = ' . wp_json_encode( $data ) . ';', 'before' );
@@ -77,6 +84,16 @@ class Shortcode {
 			'myBookings'       => __( 'My bookings', 'saunaplan' ),
 			'noBookings'       => __( 'You have no bookings yet. Tap a free time below to book.', 'saunaplan' ),
 			'timetable'        => __( 'Book a time', 'saunaplan' ),
+			'view'             => __( 'View', 'saunaplan' ),
+			'viewCalendar'     => __( 'Calendar', 'saunaplan' ),
+			'viewList'         => __( 'List', 'saunaplan' ),
+			'prevWeek'         => __( 'Previous week', 'saunaplan' ),
+			'nextWeek'         => __( 'Next week', 'saunaplan' ),
+			/* translators: short date in the calendar: 1: day of month, 2: abbreviated month, e.g. "Oct 6" */
+			'dayMonth'         => __( '%2$s %1$s', 'saunaplan' ),
+			'closed'           => __( 'Closed', 'saunaplan' ),
+			'noSlotsWeek'      => __( 'No bookable times in this week.', 'saunaplan' ),
+			'legendMine'       => __( 'Yours', 'saunaplan' ),
 			'noSlots'          => __( 'There are no bookable times in the coming days.', 'saunaplan' ),
 			'legend'           => __( 'Legend', 'saunaplan' ),
 			'legendFree'       => __( 'Free', 'saunaplan' ),

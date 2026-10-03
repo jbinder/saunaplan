@@ -454,6 +454,180 @@
 	border-top: 1px solid var(--sp-border);
 }
 
+/* ---------------------------------------------------------- calendar */
+
+.sp-days-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5em 1em;
+	margin-bottom: 0.6em;
+}
+
+.sp-days-head .sp-h2 {
+	margin: 0;
+}
+
+.sp-switch {
+	display: inline-flex;
+	padding: 3px;
+	border: 2px solid var(--sp-border);
+	border-radius: 12px;
+}
+
+.sp-switch-btn {
+	appearance: none;
+	min-height: 40px;
+	padding: 0.3em 0.9em;
+	border: none;
+	border-radius: 9px;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	font-size: 0.9em;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.sp-switch-btn[aria-pressed="true"] {
+	background: var(--sp-accent);
+	color: var(--sp-accent-text);
+}
+
+.sp-state-mine { --c: var(--sp-accent); }
+
+.sp-legend .sp-state-mine .sp-dot {
+	background: transparent;
+	box-shadow: inset 0 0 0 3px var(--sp-accent);
+}
+
+.sp-week-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.sp-week-title {
+	margin: 0;
+	font-size: 1.05em;
+	text-align: center;
+}
+
+.sp-week-title:focus {
+	outline: none;
+}
+
+.sp-cal {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 3px;
+	margin: 0 -3px;
+	font-variant-numeric: tabular-nums;
+}
+
+.sp-cal th,
+.sp-cal td {
+	padding: 0;
+	border: none;
+	background: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sp-cal-corner,
+.sp-cal-time {
+	width: 3em;
+}
+
+.sp-cal-time {
+	font-size: 0.8em;
+	font-weight: 600;
+	color: var(--sp-muted);
+	text-align: right;
+	padding-right: 4px !important;
+}
+
+.sp-cal-day {
+	padding-bottom: 4px !important;
+	line-height: 1.15;
+}
+
+.sp-cal-wd,
+.sp-cal-num {
+	display: block;
+}
+
+.sp-cal-wd {
+	font-size: 0.75em;
+	font-weight: 400;
+	color: var(--sp-muted);
+}
+
+.sp-cal-num {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.sp-cal-day.is-past {
+	opacity: 0.4;
+}
+
+.sp-cal-day.is-today .sp-cal-num {
+	display: inline-block;
+	min-width: 1.8em;
+	border-radius: 999px;
+	background: var(--sp-accent);
+	color: var(--sp-accent-text);
+}
+
+.sp-cal-cell {
+	appearance: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	border: 1px solid var(--sp-border);
+	border-top: 4px solid var(--c);
+	border-radius: 6px;
+	background: var(--bg);
+	color: var(--c);
+	font: inherit;
+	font-size: 1.05em;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.sp-cal-cell:hover {
+	border-color: var(--c);
+}
+
+.sp-cal-cell.is-mine {
+	background: var(--sp-accent);
+	border-color: var(--sp-accent);
+	color: var(--sp-accent-text);
+	font-weight: 700;
+}
+
+.sp-cal-cell.is-started {
+	opacity: 0.5;
+}
+
+.sp-cal-cell.is-waiting {
+	box-shadow: inset 0 0 0 2px var(--sp-accent);
+}
+
+.sp-cal-empty.is-closed {
+	height: 40px;
+	border-radius: 6px;
+	background: var(--sp-blocked-bg);
+}
+
 /* ------------------------------------------------------------ dialog */
 
 .sp-dialog {
@@ -730,6 +904,21 @@
 @media (max-width: 520px) {
 	.saunaplan {
 		font-size: 16px;
+	}
+
+	.sp-cal {
+		border-spacing: 2px;
+		margin: 0 -2px;
+	}
+
+	.sp-cal-corner,
+	.sp-cal-time {
+		width: 2.6em;
+	}
+
+	.sp-cal-cell {
+		height: 38px;
+		font-size: 0.95em;
 	}
 
 	.sp-slot {

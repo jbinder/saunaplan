@@ -10,6 +10,8 @@
 	var data = null; // Last /state response.
 	var dialog = null;
 	var toastTimer = null;
+	var view = loadPref( 'view', 'calendar' ) === 'list' ? 'list' : 'calendar';
+	var weekOffset = 0;
 
 	/* ------------------------------------------------------------ helpers */
 
@@ -128,6 +130,41 @@
 
 	function timeRange( slot ) {
 		return slot.time + '–' + slot.end;
+	}
+
+	/* Date helpers on ISO strings (YYYY-MM-DD), calculated in UTC so time zones never shift a day. */
+	function addDays( iso, n ) {
+		var d = new Date( iso + 'T00:00:00Z' );
+		d.setUTCDate( d.getUTCDate() + n );
+		return d.toISOString().slice( 0, 10 );
+	}
+
+	function isoWeekday( iso ) {
+		var w = new Date( iso + 'T00:00:00Z' ).getUTCDay();
+		return w === 0 ? 7 : w;
+	}
+
+	function weekStart( iso ) {
+		return addDays( iso, 1 - isoWeekday( iso ) );
+	}
+
+	function shortDate( iso ) {
+		return fmt( t.dayMonth, String( +iso.slice( 8, 10 ) ), ( cfg.months || [] )[ +iso.slice( 5, 7 ) - 1 ] || '' );
+	}
+
+	/* Remembered per device; storage can be blocked (private mode), so never rely on it. */
+	function loadPref( key, fallback ) {
+		try {
+			return window.localStorage.getItem( 'saunaplan-' + key ) || fallback;
+		} catch ( e ) {
+			return fallback;
+		}
+	}
+
+	function savePref( key, value ) {
+		try {
+			window.localStorage.setItem( 'saunaplan-' + key, value );
+		} catch ( e ) {}
 	}
 
 	function toast( message, isError ) {
@@ -429,14 +466,45 @@
 
 	function renderDays() {
 		var section = el( 'section', { class: 'sp-section sp-days', 'aria-labelledby': 'sp-days-title' }, [
-			el( 'h2', { class: 'sp-h2', id: 'sp-days-title', text: t.timetable } ),
+			el( 'div', { class: 'sp-days-head' }, [ el( 'h2', { class: 'sp-h2', id: 'sp-days-title', text: t.timetable } ), renderViewSwitch() ] ),
 			renderLegend(),
 		] );
 		if ( ! data.days.length ) {
 			section.appendChild( el( 'p', { class: 'sp-muted', text: t.noSlots } ) );
+			return section;
 		}
+		section.appendChild( view === 'calendar' ? renderCalendar() : renderList() );
+		return section;
+	}
+
+	function renderViewSwitch() {
+		return el(
+			'div',
+			{ class: 'sp-switch', role: 'group', 'aria-label': t.view },
+			[ [ 'calendar', t.viewCalendar ], [ 'list', t.viewList ] ].map( function ( item ) {
+				return el( 'button', {
+					type: 'button',
+					class: 'sp-switch-btn',
+					'aria-pressed': view === item[ 0 ] ? 'true' : 'false',
+					text: item[ 1 ],
+					onclick: function () {
+						view = item[ 0 ];
+						savePref( 'view', view );
+						render();
+						var again = root.querySelector( '.sp-switch-btn[aria-pressed="true"]' );
+						if ( again ) {
+							again.focus();
+						}
+					},
+				} );
+			} )
+		);
+	}
+
+	function renderList() {
+		var wrap = el( 'div', { class: 'sp-list' } );
 		data.days.forEach( function ( day ) {
-			section.appendChild(
+			wrap.appendChild(
 				el( 'div', { class: 'sp-day' }, [
 					el( 'h3', { class: 'sp-day-title', text: dayLabel( day ) } ),
 					el(
@@ -449,7 +517,113 @@
 				] )
 			);
 		} );
-		return section;
+		return wrap;
+	}
+
+	/** Week grid: one column per day (Monday first), one row per start time. */
+	function renderCalendar() {
+		var days = {};
+		data.days.forEach( function ( day ) {
+			var slots = {};
+			day.slots.forEach( function ( slot ) {
+				slots[ slot.time ] = slot;
+			} );
+			days[ day.date ] = { day: day, slots: slots };
+		} );
+
+		var first = weekStart( cfg.today );
+		var lastWeek = Math.round( ( Date.parse( weekStart( data.days[ data.days.length - 1 ].date ) ) - Date.parse( first ) ) / 6048e5 );
+		weekOffset = Math.max( 0, Math.min( weekOffset, lastWeek ) );
+		var start = addDays( first, 7 * weekOffset );
+		var dates = [];
+		for ( var i = 0; i < 7; i++ ) {
+			dates.push( addDays( start, i ) );
+		}
+
+		var times = [];
+		dates.forEach( function ( date ) {
+			Object.keys( ( days[ date ] || { slots: {} } ).slots ).forEach( function ( time ) {
+				if ( times.indexOf( time ) < 0 ) {
+					times.push( time );
+				}
+			} );
+		} );
+		times.sort();
+
+		function go( delta ) {
+			weekOffset += delta;
+			render();
+			var nav = root.querySelector( delta < 0 ? '.sp-week-prev' : '.sp-week-next' );
+			if ( nav && ! nav.disabled ) {
+				nav.focus();
+			} else if ( root.querySelector( '.sp-week-title' ) ) {
+				root.querySelector( '.sp-week-title' ).focus();
+			}
+		}
+
+		var nav = el( 'div', { class: 'sp-week-nav' }, [
+			el( 'button', { type: 'button', class: 'sp-btn sp-round sp-week-prev', 'aria-label': t.prevWeek, title: t.prevWeek, disabled: weekOffset === 0, text: '‹', onclick: function () {
+				go( -1 );
+			} } ),
+			el( 'h3', { class: 'sp-week-title', tabindex: '-1', 'aria-live': 'polite', text: shortDate( dates[ 0 ] ) + ' – ' + shortDate( dates[ 6 ] ) } ),
+			el( 'button', { type: 'button', class: 'sp-btn sp-round sp-week-next', 'aria-label': t.nextWeek, title: t.nextWeek, disabled: weekOffset >= lastWeek, text: '›', onclick: function () {
+				go( 1 );
+			} } ),
+		] );
+
+		if ( ! times.length ) {
+			return el( 'div', { class: 'sp-calendar' }, [ nav, el( 'p', { class: 'sp-muted', text: t.noSlotsWeek } ) ] );
+		}
+
+		var lastDate = data.days[ data.days.length - 1 ].date;
+		var head = el( 'tr', {}, [ el( 'th', { class: 'sp-cal-corner', 'aria-hidden': 'true' } ) ].concat(
+			dates.map( function ( date ) {
+				var known = days[ date ];
+				return el( 'th', { scope: 'col', class: 'sp-cal-day' + ( date === cfg.today ? ' is-today' : '' ) + ( date < cfg.today ? ' is-past' : '' ), title: known ? dayLabel( known.day ) : '' }, [
+					el( 'span', { class: 'sp-cal-wd', text: ( cfg.weekdays || [] )[ isoWeekday( date ) - 1 ] || '' } ),
+					el( 'span', { class: 'sp-cal-num', text: String( +date.slice( 8, 10 ) ) } ),
+				] );
+			} )
+		) );
+
+		var rows = times.map( function ( time ) {
+			return el( 'tr', {}, [ el( 'th', { scope: 'row', class: 'sp-cal-time', text: time } ) ].concat(
+				dates.map( function ( date ) {
+					var slot = days[ date ] && days[ date ].slots[ time ];
+					if ( ! slot ) {
+						var closed = ! days[ date ] && date >= cfg.today && date <= lastDate;
+						return el( 'td', { class: 'sp-cal-empty' + ( closed ? ' is-closed' : '' ), title: closed ? t.closed : '' } );
+					}
+					return el( 'td', {}, [ calendarCell( slot ) ] );
+				} )
+			) );
+		} );
+
+		return el( 'div', { class: 'sp-calendar' }, [
+			nav,
+			el( 'table', { class: 'sp-cal' }, [ el( 'thead', {}, [ head ] ), el( 'tbody', {}, rows ) ] ),
+		] );
+	}
+
+	function calendarCell( slot ) {
+		var state = slotState( slot );
+		var hint = actionHint( slot );
+		var label = findDayLabel( slot.date ) + ', ' + timeRange( slot ) + ': ' + stateText( slot ) + ( slot.title ? ' (' + slot.title + ')' : '' ) + ( hint ? ' – ' + hint : '' );
+		var classes = 'sp-cal-cell sp-state-' + state + ( slot.mine || slot.joined ? ' is-mine' : '' ) + ( slot.started ? ' is-started' : '' ) + ( slot.onWaitlist ? ' is-waiting' : '' );
+		var icon = slot.mine || slot.joined ? '✓' : slot.state === 'free' ? '' : stateIcon( slot );
+		return el(
+			'button',
+			{
+				type: 'button',
+				class: classes,
+				'aria-label': label,
+				title: label,
+				onclick: function () {
+					openSlotDialog( slot );
+				},
+			},
+			[ el( 'span', { 'aria-hidden': 'true', text: icon } ) ]
+		);
 	}
 
 	function renderLegend() {
@@ -458,6 +632,9 @@
 			[ 'open', t.legendOpen ],
 			[ 'private', t.legendPrivate ],
 		];
+		if ( view === 'calendar' ) {
+			items.push( [ 'mine', t.legendMine ] );
+		}
 		return el(
 			'ul',
 			{ class: 'sp-legend', 'aria-label': t.legend },

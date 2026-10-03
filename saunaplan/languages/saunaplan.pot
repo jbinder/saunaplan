@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-03T07:43:50+00:00\n"
+"POT-Creation-Date: 2026-10-03T19:44:12+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: saunaplan\n"
@@ -304,7 +304,7 @@ msgid "anonymized"
 msgstr ""
 
 #: admin/views/ratings.php:90
-#: includes/core/class-shortcode.php:129
+#: includes/core/class-shortcode.php:146
 msgid "Everything was fine"
 msgstr ""
 
@@ -319,7 +319,7 @@ msgid "Earlier"
 msgstr ""
 
 #: admin/views/schedule.php:32
-#: includes/core/class-shortcode.php:75
+#: includes/core/class-shortcode.php:82
 msgid "Today"
 msgstr ""
 
@@ -382,8 +382,8 @@ msgid "Booked by %s"
 msgstr ""
 
 #: admin/views/schedule.php:103
-#: includes/core/class-shortcode.php:82
-#: includes/core/class-shortcode.php:85
+#: includes/core/class-shortcode.php:99
+#: includes/core/class-shortcode.php:102
 msgid "Free"
 msgstr ""
 
@@ -480,7 +480,7 @@ msgid "Show this recurring session"
 msgstr ""
 
 #: admin/views/series.php:117
-#: includes/core/class-shortcode.php:71
+#: includes/core/class-shortcode.php:78
 msgid "Save"
 msgstr ""
 
@@ -1317,7 +1317,7 @@ msgstr ""
 
 #: includes/core/class-ratings.php:81
 #: includes/core/class-sessions.php:46
-#: includes/core/class-shortcode.php:51
+#: includes/core/class-shortcode.php:58
 msgid "Something went wrong. Please try again."
 msgstr ""
 
@@ -1467,345 +1467,380 @@ msgstr ""
 msgid "Please enable JavaScript to use the booking page."
 msgstr ""
 
-#: includes/core/class-shortcode.php:50
+#: includes/core/class-shortcode.php:57
 msgid "The booking page could not be loaded. Please try again later."
 msgstr ""
 
-#: includes/core/class-shortcode.php:52
-#: includes/core/class-shortcode.php:55
+#: includes/core/class-shortcode.php:59
+#: includes/core/class-shortcode.php:62
 msgid "Sign in"
 msgstr ""
 
-#: includes/core/class-shortcode.php:53
+#: includes/core/class-shortcode.php:60
 msgid "Your flat has received a letter with a personal code. Enter it once – this device will then stay signed in."
 msgstr ""
 
-#: includes/core/class-shortcode.php:54
+#: includes/core/class-shortcode.php:61
 msgid "Code from your letter"
 msgstr ""
 
-#: includes/core/class-shortcode.php:56
+#: includes/core/class-shortcode.php:63
 msgid "Signing in…"
 msgstr ""
 
-#: includes/core/class-shortcode.php:57
+#: includes/core/class-shortcode.php:64
 msgid "Welcome! You are signed in."
 msgstr ""
 
-#: includes/core/class-shortcode.php:58
+#: includes/core/class-shortcode.php:65
 msgid "Lost your letter? Please ask the administrators for a new code."
 msgstr ""
 
-#: includes/core/class-shortcode.php:59
+#: includes/core/class-shortcode.php:66
 msgid "Bookings are anonymous: others only see the kind of session and the number of people – never which flat booked."
 msgstr ""
 
-#: includes/core/class-shortcode.php:60
+#: includes/core/class-shortcode.php:67
 msgid "Sign out"
 msgstr ""
 
-#: includes/core/class-shortcode.php:61
+#: includes/core/class-shortcode.php:68
 msgid "Sign out on this device? You will need the code from your letter to sign in again."
 msgstr ""
 
-#: includes/core/class-shortcode.php:62
-#: includes/core/class-shortcode.php:63
+#: includes/core/class-shortcode.php:69
+#: includes/core/class-shortcode.php:70
 msgid "Email reminders"
 msgstr ""
 
-#: includes/core/class-shortcode.php:64
+#: includes/core/class-shortcode.php:71
 msgid "Optional: get a confirmation, a reminder before your session (with what to do when you leave), news from the waiting list and a short rating request."
 msgstr ""
 
 #. translators: %s: email address
-#: includes/core/class-shortcode.php:66
+#: includes/core/class-shortcode.php:73
 #, php-format
 msgid "Mails go to %s."
 msgstr ""
 
-#: includes/core/class-shortcode.php:67
+#: includes/core/class-shortcode.php:74
 msgid "No email address yet – you will only see everything here on the page."
 msgstr ""
 
 #. translators: %s: email address
-#: includes/core/class-shortcode.php:69
+#: includes/core/class-shortcode.php:76
 #, php-format
 msgid "Waiting for confirmation of %s – please click the link in the email."
 msgstr ""
 
-#: includes/core/class-shortcode.php:70
+#: includes/core/class-shortcode.php:77
 msgid "Your email address"
 msgstr ""
 
-#: includes/core/class-shortcode.php:72
+#: includes/core/class-shortcode.php:79
 msgid "Remove my email address"
 msgstr ""
 
-#: includes/core/class-shortcode.php:73
+#: includes/core/class-shortcode.php:80
 msgid "Your address is only used for these mails and is never shown to anyone."
 msgstr ""
 
-#: includes/core/class-shortcode.php:74
+#: includes/core/class-shortcode.php:81
 msgid "Close"
 msgstr ""
 
-#: includes/core/class-shortcode.php:76
+#: includes/core/class-shortcode.php:83
 msgid "Tomorrow"
 msgstr ""
 
-#: includes/core/class-shortcode.php:77
+#: includes/core/class-shortcode.php:84
 msgid "My bookings"
 msgstr ""
 
-#: includes/core/class-shortcode.php:78
+#: includes/core/class-shortcode.php:85
 msgid "You have no bookings yet. Tap a free time below to book."
 msgstr ""
 
-#: includes/core/class-shortcode.php:79
+#: includes/core/class-shortcode.php:86
 msgid "Book a time"
 msgstr ""
 
-#: includes/core/class-shortcode.php:80
-msgid "There are no bookable times in the coming days."
-msgstr ""
-
-#: includes/core/class-shortcode.php:81
-msgid "Legend"
-msgstr ""
-
-#: includes/core/class-shortcode.php:83
-msgid "Open – you can join"
-msgstr ""
-
-#: includes/core/class-shortcode.php:84
-msgid "Taken"
-msgstr ""
-
-#: includes/core/class-shortcode.php:86
-msgid "full"
-msgstr ""
-
 #: includes/core/class-shortcode.php:87
-msgid "This time is not available."
+msgid "View"
 msgstr ""
 
 #: includes/core/class-shortcode.php:88
-msgid "This time can not be booked yet."
+msgid "Calendar"
 msgstr ""
 
 #: includes/core/class-shortcode.php:89
-msgid "In progress"
+msgid "List"
 msgstr ""
 
 #: includes/core/class-shortcode.php:90
-msgid "Yours"
+msgid "Previous week"
 msgstr ""
 
 #: includes/core/class-shortcode.php:91
-msgid "Joined"
+msgid "Next week"
 msgstr ""
 
-#: includes/core/class-shortcode.php:92
-msgid "Waiting"
-msgstr ""
-
+#. translators: short date in the calendar: 1: day of month, 2: abbreviated month, e.g. "Oct 6"
 #: includes/core/class-shortcode.php:93
-msgid "You are on the waiting list."
+#, php-format
+msgid "%2$s %1$s"
 msgstr ""
 
 #: includes/core/class-shortcode.php:94
-msgid "Good news: this time is free now – book it before someone else does!"
+msgid "Closed"
 msgstr ""
 
 #: includes/core/class-shortcode.php:95
-#: includes/core/class-shortcode.php:105
-#: includes/core/class-shortcode.php:114
-msgid "Book"
+msgid "No bookable times in this week."
 msgstr ""
 
 #: includes/core/class-shortcode.php:96
-#: includes/core/class-shortcode.php:115
-msgid "Join"
+#: includes/core/class-shortcode.php:107
+msgid "Yours"
 msgstr ""
 
 #: includes/core/class-shortcode.php:97
+msgid "There are no bookable times in the coming days."
+msgstr ""
+
+#: includes/core/class-shortcode.php:98
+msgid "Legend"
+msgstr ""
+
+#: includes/core/class-shortcode.php:100
+msgid "Open – you can join"
+msgstr ""
+
+#: includes/core/class-shortcode.php:101
+msgid "Taken"
+msgstr ""
+
+#: includes/core/class-shortcode.php:103
+msgid "full"
+msgstr ""
+
+#: includes/core/class-shortcode.php:104
+msgid "This time is not available."
+msgstr ""
+
+#: includes/core/class-shortcode.php:105
+msgid "This time can not be booked yet."
+msgstr ""
+
+#: includes/core/class-shortcode.php:106
+msgid "In progress"
+msgstr ""
+
+#: includes/core/class-shortcode.php:108
+msgid "Joined"
+msgstr ""
+
+#: includes/core/class-shortcode.php:109
+msgid "Waiting"
+msgstr ""
+
+#: includes/core/class-shortcode.php:110
+msgid "You are on the waiting list."
+msgstr ""
+
+#: includes/core/class-shortcode.php:111
+msgid "Good news: this time is free now – book it before someone else does!"
+msgstr ""
+
+#: includes/core/class-shortcode.php:112
+#: includes/core/class-shortcode.php:122
+#: includes/core/class-shortcode.php:131
+msgid "Book"
+msgstr ""
+
+#: includes/core/class-shortcode.php:113
+#: includes/core/class-shortcode.php:132
+msgid "Join"
+msgstr ""
+
+#: includes/core/class-shortcode.php:114
 msgid "Wait"
 msgstr ""
 
 #. translators: 1: people, 2: capacity
-#: includes/core/class-shortcode.php:99
+#: includes/core/class-shortcode.php:116
 #, php-format
 msgid "%1$s of %2$s places"
 msgstr ""
 
 #. translators: %s: free places
-#: includes/core/class-shortcode.php:101
+#: includes/core/class-shortcode.php:118
 #, php-format
 msgid "Places left: %s"
 msgstr ""
 
-#: includes/core/class-shortcode.php:102
+#: includes/core/class-shortcode.php:119
 msgid "1 waiting"
 msgstr ""
 
 #. translators: %s: number of people on the waiting list
-#: includes/core/class-shortcode.php:104
+#: includes/core/class-shortcode.php:121
 #, php-format
 msgid "%s waiting"
 msgstr ""
 
-#: includes/core/class-shortcode.php:106
+#: includes/core/class-shortcode.php:123
 msgid "How do you want to book?"
 msgstr ""
 
-#: includes/core/class-shortcode.php:107
+#: includes/core/class-shortcode.php:124
 msgid "How many of you?"
 msgstr ""
 
-#: includes/core/class-shortcode.php:108
+#: includes/core/class-shortcode.php:125
 msgid "How many of you? (optional)"
 msgstr ""
 
 #. translators: %s: people category, e.g. "Women"
-#: includes/core/class-shortcode.php:110
+#: includes/core/class-shortcode.php:127
 #, php-format
 msgid "One less: %s"
 msgstr ""
 
 #. translators: %s: people category, e.g. "Women"
-#: includes/core/class-shortcode.php:112
+#: includes/core/class-shortcode.php:129
 #, php-format
 msgid "One more: %s"
 msgstr ""
 
-#: includes/core/class-shortcode.php:113
+#: includes/core/class-shortcode.php:130
 msgid "Book now"
 msgstr ""
 
-#: includes/core/class-shortcode.php:116
+#: includes/core/class-shortcode.php:133
 msgid "Join this session"
 msgstr ""
 
-#: includes/core/class-shortcode.php:117
+#: includes/core/class-shortcode.php:134
 msgid "Join now"
 msgstr ""
 
-#: includes/core/class-shortcode.php:118
+#: includes/core/class-shortcode.php:135
 msgid "or"
 msgstr ""
 
-#: includes/core/class-shortcode.php:119
+#: includes/core/class-shortcode.php:136
 msgid "Join the waiting list"
 msgstr ""
 
-#: includes/core/class-shortcode.php:120
+#: includes/core/class-shortcode.php:137
 msgid "Leave the waiting list"
 msgstr ""
 
-#: includes/core/class-shortcode.php:121
+#: includes/core/class-shortcode.php:138
 msgid "Cancel booking"
 msgstr ""
 
-#: includes/core/class-shortcode.php:122
+#: includes/core/class-shortcode.php:139
 msgid "Really cancel this booking?"
 msgstr ""
 
-#: includes/core/class-shortcode.php:123
+#: includes/core/class-shortcode.php:140
 msgid "Leave session"
 msgstr ""
 
-#: includes/core/class-shortcode.php:124
+#: includes/core/class-shortcode.php:141
 msgid "Really leave this session?"
 msgstr ""
 
-#: includes/core/class-shortcode.php:125
+#: includes/core/class-shortcode.php:142
 msgid "One moment…"
 msgstr ""
 
-#: includes/core/class-shortcode.php:126
+#: includes/core/class-shortcode.php:143
 msgid "How was it?"
 msgstr ""
 
-#: includes/core/class-shortcode.php:127
+#: includes/core/class-shortcode.php:144
 msgid "How was your last session?"
 msgstr ""
 
-#: includes/core/class-shortcode.php:128
+#: includes/core/class-shortcode.php:145
 msgid "Rate now (10 seconds)"
 msgstr ""
 
-#: includes/core/class-shortcode.php:130
+#: includes/core/class-shortcode.php:147
 msgid "or tell us more:"
 msgstr ""
 
-#: includes/core/class-shortcode.php:131
+#: includes/core/class-shortcode.php:148
 msgid "bad"
 msgstr ""
 
-#: includes/core/class-shortcode.php:132
+#: includes/core/class-shortcode.php:149
 msgid "okay"
 msgstr ""
 
-#: includes/core/class-shortcode.php:133
+#: includes/core/class-shortcode.php:150
 msgid "good"
 msgstr ""
 
-#: includes/core/class-shortcode.php:134
+#: includes/core/class-shortcode.php:151
 msgid "Anything wrong?"
 msgstr ""
 
-#: includes/core/class-shortcode.php:135
+#: includes/core/class-shortcode.php:152
 msgid "Comment (optional)"
 msgstr ""
 
-#: includes/core/class-shortcode.php:136
+#: includes/core/class-shortcode.php:153
 msgid "Send"
 msgstr ""
 
-#: includes/core/class-shortcode.php:137
+#: includes/core/class-shortcode.php:154
 msgid "Thank you!"
 msgstr ""
 
-#: includes/core/class-shortcode.php:138
+#: includes/core/class-shortcode.php:155
 msgid "Your feedback has been saved."
 msgstr ""
 
-#: includes/core/class-shortcode.php:139
+#: includes/core/class-shortcode.php:156
 msgid "This session has already been rated by your flat. Thank you!"
 msgstr ""
 
 #. translators: %s: names of the modes that count toward the monthly limit
-#: includes/core/class-shortcode.php:141
+#: includes/core/class-shortcode.php:158
 #, php-format
 msgid "Your flat's bookings (%s):"
 msgstr ""
 
 #. translators: 1: month, 2: used, 3: limit
-#: includes/core/class-shortcode.php:143
+#: includes/core/class-shortcode.php:160
 #, php-format
 msgid "%1$s %2$s of %3$s"
 msgstr ""
 
 #. translators: 1: limit per month, 2: mode names
-#: includes/core/class-shortcode.php:145
+#: includes/core/class-shortcode.php:162
 #, php-format
 msgid "Max. %1$s bookings \"%2$s\" per flat and month"
 msgstr ""
 
 #. translators: %s: slots in a row
-#: includes/core/class-shortcode.php:147
+#: includes/core/class-shortcode.php:164
 #, php-format
 msgid "max. %s slots in a row"
 msgstr ""
 
 #. translators: %s: days
-#: includes/core/class-shortcode.php:149
+#: includes/core/class-shortcode.php:166
 #, php-format
 msgid "bookable %s days ahead"
 msgstr ""
 
 #. translators: %s: people
-#: includes/core/class-shortcode.php:151
+#: includes/core/class-shortcode.php:168
 #, php-format
 msgid "up to %s people"
 msgstr ""
